@@ -1,0 +1,36 @@
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.kanan{
+    animation: float 3s ease-in-out infinite;
+}
+.kiriAbout{
+    animation: float 4s ease-in-out infinite;
+}
+
+.navMenu a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffb703;
+    transition: width .3s;
+  }
+  .navMenu a:hover::after{
+    width: 100%;
+    transform-origin: center;
+}
+
+
+.DirektoriList::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMKMOVE</title>
+    <link rel="shortcut icon" href="UMKMOVELOGO.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- CSS-keyframe -->
+    <link rel="stylesheet" href="keyframes.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="fixed z-50 w-full">
+      <nav
+        style="padding: 5px 25px"
+        class="flex justify-start items-center px-8 text-white h-[75px]"
+      >
+        <a href="">
+          <div id="Logo" class="flex justify-between items-center">
+            <img src="UMKMOVELOGO.png" alt="logo" width="75px" />
+            <h1
+              style="margin-left: -15px"
+              class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text font-bold text-[24px] text-start text-transparent"
+            >
+              UMKMOVE
+            </h1>
+          </div>
+        </a>
+
+        <!-- <div
+          style="padding: 5px 20px"
+          class="loginButton bg-[#D2AC6C] p-3 w-[100px] text-center font-bold rounded-xl"
+        >
+          <button>Login</button>
+        </div> -->
+      </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Landing Page -->
+    <section class="bg-linear-to-b from-[#370B22] to-[#D2AC6C]">
+      <div class="back z-[-2]">
+        <img
+          src="Rectangle 7.svg"
+          alt=""
+          width="600px"
+        />
+        <!--https://pin.it/34IjTc3R7-->
+
+      </div>
+      <div class="container absolute z-10 top-10 right-70 flex flex-row justify-evenly w-[750px] flex justify-center items-center h-[500px]">
+                <div
+          style="padding: 40px"
+          class="kiri w-[1000px] flex flex-col gap-5 shadow-[5px_5px_30px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-[rgba(217,217,217,0.2)] text-white rounded-3xl mr-10 w-[50%] h-[90%]"
+        >
+        <div style="padding:10px 50px"
+        class="login bg-[#370B22] rounded-3xl h-[100%]">
+          <h1 class="text-center font-bold">MASUK</h1>
+          <form action="">
+            <input style="padding: 10px;" class="bg-[#D9D9D9] w-[100%] h-10 rounded-lg" type="text" id="username" name="username" placeholder="Username" /><br /><br />
+            <input style="padding: 10px;" class="bg-[#D9D9D9] w-[100%] h-10 rounded-lg" type="password" id="password" name="password" placeholder="Password" /><br /><br />
+            <input class="bg-[#D2AC6C] p-3 w-[100px] text-center font-bold rounded-xl" type="submit" value="MASUK" />
+        </div>
+
+          <p class="text-lg">
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
