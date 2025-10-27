@@ -20,6 +20,89 @@ function showtyping() {
   return typingdiv;
 }
 
+const umkmData = {
+  "umkm_list_Makanam": [
+    {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    }
+  ],
+
+  "umkm_list_minuman": [
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    }
+  ],
+
+  "umkm_list_Jasa" : [
+            {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    },
+        {
+      "name": "",
+      "location": "Indonesia",
+      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+      "size": "mikro/kecil",
+      "uniqueness": "desain lokal & produksi skala kecil",
+    }
+  ]
+};
+
 async function getBotReply(userMessage) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
   const systemPrompt = `
@@ -46,6 +129,14 @@ Teknik Fabrikasi Logam & Manufaktur,
 Teknik Tenaga Listrik, 
 Teknik Elektronika Daya & Komunikasi, 
 serta Konstruksi Gedung dan Manajemen Perawatan Otomotif. 
+
+Dan Kamu adalah chatbot yang memberikan informasi tentang UMKM Indonesia.
+Berikut data UMKM yang kamu ketahui:
+${JSON.stringify(umkmData, null, 2)}
+
+Gunakan data di atas untuk menjawab pertanyaan pengguna.
+User: ${userMessage}
+AI:
 
 `;
 
