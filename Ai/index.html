@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link>
+</head>
+<body class="bg-fixed bg-linear-to-b from-[#370B22] to-[#D2AC6C]">
+  <section class="ChatBot">
+    <div class="content-chat">
+    <header>
+      <h1 class="text-3xl font-bold"> <span class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent">
+        MOVE.AI</span> 🤖</h1>
+    </header>
+      <div id="chat-box" class="chat-box">
+      <div class="Message user-message">Hi</div>
+      <div class="Message bot-message">Hello</div>
+      </div>
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id ="send-btn">Send</button>
+      </div>
+</div>
+  </section>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
