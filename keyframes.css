@@ -10,7 +10,10 @@
     }
 }
 
+
+
 .kanan{
+    /* animation: fadeLeft 2s ease-in infinite; */
     animation: float 3s ease-in-out infinite;
 }
 .kiriAbout{
@@ -34,3 +37,11 @@
 .DirektoriList::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes fadeLeft {
+ 0%{ transform: scale(0.5);}   
+100%{
+    transform:scale(1)
+}
+}
+
