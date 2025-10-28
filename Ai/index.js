@@ -21,9 +21,9 @@ function showtyping() {
 }
 
 const umkmData = {
-  "umkm_list_Makanam": [
+  "umkm_list_produk": [
     {
-      "name": "",
+      "name": "Hafidz store",
       "location": "Indonesia",
       "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
       "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
@@ -31,7 +31,7 @@ const umkmData = {
       "uniqueness": "desain lokal & produksi skala kecil",
     },
         {
-      "name": "",
+      "name": "Fatih Store",
       "location": "Indonesia",
       "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
       "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
@@ -39,61 +39,7 @@ const umkmData = {
       "uniqueness": "desain lokal & produksi skala kecil",
     },
         {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    }
-  ],
-
-  "umkm_list_minuman": [
-        {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    },
-        {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    },
-        {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    }
-  ],
-
-  "umkm_list_Jasa" : [
-            {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    },
-        {
-      "name": "",
-      "location": "Indonesia",
-      "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
-      "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
-      "size": "mikro/kecil",
-      "uniqueness": "desain lokal & produksi skala kecil",
-    },
-        {
-      "name": "",
+      "name": "Idham Store",
       "location": "Indonesia",
       "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
       "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
@@ -101,6 +47,60 @@ const umkmData = {
       "uniqueness": "desain lokal & produksi skala kecil",
     }
   ]
+
+  // "umkm_list_minuman": [
+  //       {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   },
+  //       {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   },
+  //       {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   }
+  // ],
+
+  // "umkm_list_Jasa" : [
+  //           {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   },
+  //       {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   },
+  //       {
+  //     "name": "",
+  //     "location": "Indonesia",
+  //     "product": "Tas & aksesoris kulit/kanvas (brand UMKM)",
+  //     "sales_channels": ["online marketplace", "Instagram", "offline bazaar"],
+  //     "size": "mikro/kecil",
+  //     "uniqueness": "desain lokal & produksi skala kecil",
+  //   }
+//  ]
 };
 
 async function getBotReply(userMessage) {
@@ -114,6 +114,20 @@ Identitas dan konteks:
 - Jangan mengklaim bahwa kamu dibuat oleh Google, OpenAI, atau pihak lain — sebutkan sesuai konteks ini.
 - Jika ada pertanyaan lain tentang asalmu, jelaskan bahwa kamu adalah chatbot hasil pengembangan proyek pembelajaran oleh Lutfi Idham Puro.
 - Kamu adalah asisten AI yang beroperasi pada tahun 2025.
+- Menteri umkm saat ini adalah Maman Abdurrahman
+berikut informasi tentang Maman Abdurrahman :
+Maman Abdurrahman (lahir 10 September 1980) adalah politikus berkebangsaan Indonesia.
+ Saat ini, ia menduduki jabatan Menteri Usaha Mikro, Kecil, dan Menengah. 
+ Sebelumnya ia menjabat sebagai anggota DPR-RI pada 2018 hingga 2024. 
+ Ia mewakili daerah pemilihan Kalimantan Barat I, 
+ yang meliputi Kabupaten Sambas, Kabupaten Bengkayang, 
+ Kota Singkawang, Kabupaten Landak, Kabupaten Kayong Utara, Kabupaten Ketapang, Kota Pontianak, 
+ Kabupaten Mempawah, dan Kabupaten Kubu Raya. Maman merupakan kader Partai Golongan Karya, 
+ ia bertugas di Komisi VII dan dipercaya menjabat 
+ sebagai Wakil Ketua Komisi VII.
+
+- Kamu adalah asisten yang menulis output dalam format teks biasa.
+- Tulis semua output dalam format teks biasa, tanpa menggunakan Markdown, tanda bintang, tanda backtick , atau format bold/italic. Gunakan tanda titik, koma, dan baris baru untuk membuat teks rapi.
 
 Jika kamu ditanya tentang SMKN 26 Jakarta atau jurusan SIJA, berikan informasi berikut:
 
@@ -183,7 +197,7 @@ sendButton.onclick = async () => {
 
 userInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    e.preventDefault(); // biar gak bikin newline di input
-    sendButton.click(); // trigger tombol kirim
+    e.preventDefault();
+    sendButton.click();
   }
 });
