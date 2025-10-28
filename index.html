@@ -21,6 +21,9 @@
 
     <!-- CSS-keyframe -->
     <link rel="stylesheet" href="keyframes.css" />
+
+    <!-- AOs -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       html {
         scroll-behavior: smooth;
@@ -83,10 +86,10 @@
       </div>
 
       <div class="container absolute z-10 top-30 flex flex-row justify-evenly">
-        <div
+        <div data-aos="fade-right" data-aos-duration="1000"
           style="padding: 40px"
           class="kiri flex flex-col gap-5 shadow-[5px_5px_30px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-[rgba(217,217,217,0.2)] text-white rounded-3xl mr-10 w-[50%] h-[50%]"
-        >
+          >
           <h1 class="font-bold text-4xl Landing-[1.1]">
             Gerakkan UMKM Lokal Bersama
             <span
@@ -95,7 +98,7 @@
             >!
           </h1>
           <p class="text-lg">
-            UMKMOVE adalah wadah digital yang dirancang untuk membantu sepuluh
+            UMKMOVE adalah wadah digital yang dirancang untuk membantu
             UMKM lokal agar dapat tumbuh, berkembang, dan dikenal lebih luas di
             dunia digital. Mari jadi bagian dari gerakan untuk mengangkat UMKM
             agar terus move forward — bersama kita bantu mereka melangkah lebih
@@ -104,8 +107,9 @@
           </p>
         </div>
 
-        <div class="kanan">
-          <img src="Warung-1.png" alt="logo" width="350px" />
+        <div 
+        class="kanan">
+          <img data-aos="fade-left" data-aos-duration="1000" src="Warung-1.png" alt="logo" width="350px" />
         </div>
       </div>
     </section>
@@ -119,7 +123,7 @@
     >
       <div class="container flex flex-row justify-evenly items-center gap-20">
         <div class="kiriAbout">
-          <img src="Group 48.svg" alt="About Us Image" width="2500px" />
+          <img data-aos="fade-right" data-aos-duration="1000" src="Group 48.svg" alt="About Us Image" width="2500px" />
         </div>
         <div class="kananAbout flex flex-col gap-5 justify-center items-center">
           <div
@@ -127,13 +131,13 @@
           >
             <h2>TENTANG KAMI</h2>
           </div>
-          <p class="text-xl">
+          <p class="text-xl" data-aos="fade-left" data-aos-duration="1000">
             Di balik setiap produk lokal, selalu ada cerita perjuangan, ide, dan
             impian. UMKMOVE lahir dari semangat untuk mengangkat cerita-cerita
             itu ke dunia digital, agar setiap usaha kecil bisa bergerak maju dan
             dikenal lebih luas.
           </p>
-          <p class="text-xl">
+          <p class="text-xl" data-aos="fade-left" data-aos-duration="1000">
             <span
               class="font-bold bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent"
               >UMKMOVE</span
@@ -336,7 +340,8 @@
         <h2>DIREKTORI UMKM</h2>
       </div>
 
-      <div style="margin: 30px 0;"
+      <div
+        style="margin: 30px 0"
         class="DirektoriList w-full max-w-6xl flex flex-row flex-nowrap gap-6 overflow-x-auto p-4"
       >
         <div class="h-[250px] w-[400px] shrink-0 rounded-2xl bg-blue-600"></div>
@@ -350,14 +355,18 @@
         <div class="h-[250px] w-[400px] shrink-0 rounded-2xl bg-blue-600"></div>
         <div class="h-[250px] w-[400px] shrink-0 rounded-2xl bg-blue-600"></div>
       </div>
-      <div class="container flex flex-col justify-center items-center gap-[-10px]">
+      <div
+        class="container flex flex-col justify-center items-center gap-[-10px]"
+      >
         <div
           style="margin: 30px"
           class="DirTitle flex h-[70px] w-[520px] tracking-[2px] items-center justify-center rounded-[15px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
         >
           <h2>MASUK UNTUK LIHAT LEBIH LANJUT</h2>
         </div>
-        <p class="font-bold">Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+        <p class="font-bold">
+          Belum punya akun? <a href="#">Daftar Sekarang</a>
+        </p>
       </div>
     </section>
     <!-- Direktori UMKM end -->
@@ -449,5 +458,11 @@
       <p>Copyright &copy; 2025 Mi Ayam Brigade</p>
     </div>
     <!-- Footer End -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
