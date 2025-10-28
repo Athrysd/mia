@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChatBot</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-</head>
-<body class="bg-fixed bg-linear-to-b from-[#370B22] to-[#D2AC6C] flex flex-col justify-center overflow-y-hidden ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-fixed bg-linear-to-b from-[#370B22] to-[#D2AC6C] flex flex-col justify-center overflow-y-hidden"
+  >
+    <div class="flex flex-row flex gap-49">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <a
+          href="../index.html"
+          style="margin-left: 30px; margin-top: 20px"
+          class="flex h-[35px] w-[90px] tracking-[3px] items-center justify-center rounded-full bg-gradient-to-r from-[#A05D7F] to-[#D5A351] flex flex-row shadow-[5px_5px_15px_rgba(0,0,0,0.5)] p-3 text-white font-medium items-center justify-between hover:scale-105 transition-transform duration-300"
+        >
+          <button>
+            <i class="fa-solid fa-arrow-left"> </i>
+          </button>
+        </a>
+      </div>
+      <div
+        style="padding-bottom: 20px; margin-top: 20px"
+        class="text-white text-2xl font-bold flex justify-center items-center"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <h1>
+          Selamat datang di page Ai kami yang bernama
+          <span
+            class="font-bold bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent"
+          >
+            MOVE.AI
+          </span>
+        </h1>
+      </div>
+    </div>
 
-<div class="flex flex-row flex gap-49">
-
-  <div data-aos="zoom-in" data-aos-duration="1000">
-  <a href="../index.html"
-   style="margin-left: 30px; margin-top: 20px;"
-  class="flex h-[35px] w-[90px] tracking-[3px] items-center justify-center rounded-full bg-gradient-to-r from-[#A05D7F] to-[#D5A351] flex flex-row shadow-[5px_5px_15px_rgba(0,0,0,0.5)] p-3 text-white font-medium items-center justify-between hover:scale-105 transition-transform duration-300"
-        ><button><i><i class="fa-solid fa-arrow-left"></i></i></button></a>
-  </div>
-
-  <div style="padding-bottom: 20px; margin-top: 20px;" class=" text-white text-2xl font-bold flex justify-center items-center"  data-aos="zoom-in" data-aos-duration="1000">
-    <h1>Selamat datang di page Ai kami yang bernama <span class="font-bold bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent">
-       MOVE.AI
-    </span></h1>
-  </div>
-
-
-</div>
-
-
-  <section class="ChatBot">
-    <div class="content-chat" data-aos="zoom-in" data-aos-duration="1000">
-    <header>
-      <h1 class="text-3xl font-bold"> <span class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent">
-        MOVE.AI</span> 🤖</h1>
-    </header>
-      <div id="chat-box" class="chat-box">
-      <!-- <div class="Message user-message">Hi</div>
+    <section class="ChatBot">
+      <div class="content-chat" data-aos="zoom-in" data-aos-duration="1000">
+        <header>
+          <h1 class="text-3xl font-bold">
+            <span
+              class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent"
+            >
+              MOVE.AI</span
+            >
+            🤖
+          </h1>
+        </header>
+        <div id="chat-box" class="chat-box">
+          <!-- <div class="Message user-message">Hi</div>
       <div class="Message bot-message">Hello</div> -->
+        </div>
+        <div class="input-area">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Type your message..."
+          />
+          <button id="send-btn">Send</button>
+        </div>
       </div>
-      <div class="input-area">
-        <input type="text" id="user-input" placeholder="Type your message...">
-        <button id ="send-btn">Send</button>
-      </div>
-</div>
-  </section>
-  <script type="module" src="index.js"></script>
+    </section>
+    <script type="module" src="index.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
