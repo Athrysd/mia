@@ -38,37 +38,202 @@
     </style>
   </head>
   <body>
+    <div class="tombolHome">
+      <a href="index.html"
+        ><button
+          style="padding: 10px"
+          class="fixed z-1 bottom-5 right-5 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
+        >
+          <i class="fa fa-home fa-lg text-[#370B22]"></i></button
+      ></a>
+    </div>
+
     <section
       style="padding: 30px"
       class="overflow-x-hidden bg-linear-to-b from-[#370B22] to-[#D2AC6C] w-[98.8vw] h-[600px]"
     >
-      <div
-        style="padding: 15px"
-        class="welcome flex flex-col gap-5 shadow-[5px_5px_30px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-[rgba(217,217,217,0.2)] text-white rounded-3xl mr-10 w-[100%] h-[35%]"
-      >
-        <h1 class="text-white text-center text-4xl font-bold">
-          SELAMAT DATANG DI DIREKTORI <span class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent">UMKMOVE </span>!
-        </h1>
-        <p class="text-justify text-xl">
-          Direktori UMKMOVE hadir sebagai wadah digital untuk memperkenalkan dan
-          menghubungkan UMKM lokal agar lebih dikenal luas. Melalui platform
-          ini, pelaku usaha dapat memperluas jaringan, mempromosikan produk, dan
-          berkembang bersama menuju transformasi digital.
-        </p>
+      <div class="aksesoris absolute top-0 right-0 z-[-1]">
+        <img src="Rectangle 51.png" width="650px" alt="" />
       </div>
-      <div style="margin-top: 25px" class="kategori">
-        <div class="atas flex flex-row justify-between items-center">
-          <h1 class="text-white text-center text-4xl font-bold underline">
-            KATEGORI UMKM
+
+      <div class="container">
+        <div
+          style="padding: 15px"
+          class="welcome flex flex-col gap-5 shadow-[5px_5px_30px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-[rgba(217,217,217,0.2)] text-white rounded-3xl mr-10 w-[100%] h-[35%]"
+        >
+          <h1 class="text-white text-center text-4xl font-bold">
+            SELAMAT DATANG DI DIREKTORI
+            <span
+              class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent"
+              >UMKMOVE </span
+            >!
           </h1>
-          <button style="padding: 10px;" class="rounded-full bg-red-600 font-bold text-white">Reset Pengaturan</button>
+          <p class="text-justify text-xl">
+            Direktori UMKMOVE hadir sebagai wadah digital untuk memperkenalkan
+            dan menghubungkan UMKM lokal agar lebih dikenal luas. Melalui
+            platform ini, pelaku usaha dapat memperluas jaringan, mempromosikan
+            produk, dan berkembang bersama menuju transformasi digital.
+          </p>
         </div>
-        <div style="margin-top: 20px;" class="pilihan flex flex-row justify-center gap-10">
-        <a href=""><div style="padding: 10px;" class="h-[250px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"><h1 class="text-white font-bold">Lorem, ipsum.</h1></div></a>
-        <a href=""><div style="padding: 10px;" class="h-[250px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"><h1 class="text-white font-bold">Lorem, ipsum.</h1></div></a>
-        <a href=""><div style="padding: 10px;" class="h-[250px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"><h1 class="text-white font-bold">Lorem, ipsum.</h1></div></a>
-      </div>
+        <div style="margin-top: 35px" class="kategori">
+          <div class="atas flex flex-row justify-between items-center">
+            <h1 class="text-white text-center text-4xl font-bold underline">
+              KATEGORI UMKM
+            </h1>
+            <div class="searchBar">
+              <input
+                style="padding: 10px; width: 250px"
+                type="text"
+                placeholder="Cari UMKM..."
+                class="rounded-full focus:outline-none text-white border-2 border-white"
+              />
+              <button
+                style="
+                  padding: 10px;
+                  margin-left: 10px;
+                  width: 40px;
+                  height: 40px;
+                "
+                class="rounded-full bg-white hover:bg-gray-200 transition"
+              >
+                <i class="fa fa-search text-[#370B22]"></i>
+              </button>
+            </div>
+            <button
+              style="padding: 10px"
+              class="rounded-full bg-red-600 font-bold text-white"
+            >
+              Reset Pengaturan
+            </button>
+          </div>
+          <div
+            style="margin-top: 75px"
+            class="pilihan flex flex-row justify-center gap-10"
+          >
+            <a href=""
+              ><div
+                style="padding: 10px"
+                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+              >
+                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+              </div></a
+            >
+            <a href=""
+              ><div
+                style="padding: 10px"
+                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+              >
+                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+              </div></a
+            >
+            <a href=""
+              ><div
+                style="padding: 10px"
+                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+              >
+                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+              </div></a
+            >
+          </div>
+        </div>
       </div>
     </section>
+
+    <section style="margin-top: 50px" id="makanan">
+      <div
+        class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-3xl font-semibold text-white shadow-lg"
+      >
+        <h1>KATEGORI MAKANAN</h1>
+      </div>
+      <div class="container"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      style="padding: 30px 30px 0 30px"
+      class="bg-[#370B22] h-70 flex flex-row w-full justify-between content-start px-8 pt-10 pb-10"
+    >
+      <div class="col1" style="margin-top: -30px">
+        <a href="">
+          <div id="Logo" class="flex justify-start items-center">
+            <img src="UMKMOVELOGO.png" alt="logo" width="75px" />
+            <h1
+              style="margin-left: -15px"
+              class="bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text font-bold text-[24px] text-start text-transparent"
+            >
+              UMKMOVE
+            </h1>
+          </div>
+        </a>
+        <div class="text">
+          <h1 class="text-white">
+            Mendukung UMKM Lokal <br />
+            Go Digital, Bersama UMKMOVE, mari berinovasi, <br />
+            beradaptasi, dan tumbuh bersama menuju <br />
+            Indonesia yang lebih mandiri dan kreatif.
+          </h1>
+        </div>
+
+        <div
+          class="sosmed text-white flex flex-row h-5 justify-start gap-15 items-start"
+          style="margin-top: 30px"
+        >
+          <i
+            class="hover:scale-125 transition-transform duration-300 fa-brands fa-instagram text-3xl"
+          ></i>
+          <i
+            class="hover:scale-125 transition-transform duration-300 fa-brands fa-square-x-twitter text-3xl"
+          ></i>
+          <i
+            class="hover:scale-125 transition-transform duration-300 fa-brands fa-square-facebook text-3xl"
+          ></i>
+          <i
+            class="hover:scale-125 transition-transform duration-300 fa-brands fa-linkedin text-3xl"
+          ></i>
+        </div>
+      </div>
+
+      <div class="col2 text-white flex flex-col gap-10">
+        <h1 class="font-bold">Perusahaan</h1>
+        <div class="isiCol flex flex-col gap-5">
+          <p>Beranda</p>
+          <p>Tentang Kami</p>
+          <p>Layanan Kami</p>
+        </div>
+      </div>
+
+      <div class="col2 text-white flex flex-col gap-10">
+        <h1 class="font-bold">Dukungan</h1>
+        <div class="isiCol flex flex-col gap-5">
+          <p>FAQ</p>
+          <p>Syarat & <br />ketentuan</p>
+          <p>Pusat bantuan</p>
+        </div>
+      </div>
+
+      <div class="col2 text-white flex flex-col gap-10">
+        <h1 class="font-bold">Fitur</h1>
+        <div class="isiCol flex flex-col gap-5">
+          <p>Chat AI</p>
+          <p>Direktori UMKM</p>
+          <p>Tour Guide</p>
+        </div>
+      </div>
+
+      <div class="col2 text-white flex flex-col gap-10">
+        <h1 class="font-bold">Kontak</h1>
+        <div class="isiCol flex flex-col gap-5">
+          <p>+62 0813-234-5678</p>
+          <p>umkmove@co.id</p>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="Copyrigth border-t-2 w-full border-white text-white text-center bg-[#370B22] h-15 font-bold"
+      style="padding-top: 15px"
+    >
+      <p>Copyright &copy; 2025 Mi Ayam Brigade</p>
+    </div>
+    <!-- Footer End -->
   </body>
 </html>
