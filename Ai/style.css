@@ -97,3 +97,47 @@
 #send-btn:hover{
 background-color: #C47C00;
 }
+
+.bot-message {
+  font-size: 15px; /* lebih kecil */
+  padding: 6px 10px;
+  max-width: 75%;
+  background-color: #ffff;
+  color: black;
+  border-radius: 10px;
+  margin: 5px 0;
+  align-self: flex-start;
+}
+
+#typing {
+  font-style: italic;
+  color: #ccc;
+  margin: 8px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #000; /* ubah ke hitam kalau bubble kamu putih */
+  margin-left: 2px;
+  animation: smoothBlink 1s ease-in-out infinite;
+}
+
+@keyframes smoothBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+
