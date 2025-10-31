@@ -1,10 +1,21 @@
 /* --- TAMPILAN HP --- */
 @media only screen and (max-width: 600px) {
+  header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999 !important;
+    background: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(20px);
+  }
+
   nav {
     height: 100px;
     padding: 5px 15px;
-    position: fixed;
+    position: relative;
     width: 100%;
+    z-index: 9999;
   }
 
   #Logo h1 {
@@ -28,7 +39,7 @@
     transition: transform 0.3s ease-in-out;
     padding: 50px 20px;
     gap: 70px;
-    /* z-index: 999; */
+    z-index: 998;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.4);
     border-radius: 0 0 0 25px;
   }
@@ -56,8 +67,9 @@
   .garis3 {
     width: 35px;
     height: 3px;
-    background-color: #000;
+    background-color: #370b22;
     transition: all 0.7s ease;
+    border-radius: 999px;
     transform-origin: center;
   }
 
@@ -76,14 +88,14 @@
 
   /* Landing Page */
   #Beranda {
-    height: 1350px;
-    width: 200vw;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
-    padding-top:100px ;
-    padding-bottom:100px ;
+    padding: 120px 20px 80px;
+    position: relative;
+    z-index: 1;
   }
 
   .back {
@@ -97,41 +109,280 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    position: relative;
-    top: 0px;
-    right: -15px;
-    /* margin: auto; */
+    position: static;
     width: 100%;
-    height: 100%;
-  }
-  #Beranda .container .kiri{
-    width: 80%;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    max-width: 100%;
   }
 
+  #Beranda .container .kiri {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  #Beranda .container .kanan {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  #Beranda .container .kanan img {
+    display: none;
+  }
 
   #Beranda .container h1 {
-    font-size: 50px;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
+
   #Beranda .container p {
-    font-size: 20px;
-  }
-  #Beranda .container {
-    padding: 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
 
 
   /* === ABOUT US === */
+  #About {
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+  }
 
   #About .container {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    /* gap: 40px; */
+    margin-top: -100px;
   }
+
+  #About .kiriAbout,
+  #About .kananAbout {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #About .kiriAbout img {
+    display: none;
+  }
+
+  #About .abaoutTitle {
+    width: 280px !important;
+    height: 60px !important;
+    font-size: 20px !important;
+  }
+
+  #About .kananAbout p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* === LAYANAN KAMI === */
+  #Layanan {
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  #Layanan .AtasLayanan {
+    text-align: center;
+    gap: 20px;
+  }
+
+  #Layanan .LayananTitle {
+    width: 260px !important;
+    height: 60px !important;
+    font-size: 20px !important;
+  }
+
+  #Layanan .AtasLayanan p {
+    font-size: 18px !important;
+    line-height: 1.5;
+  }
+
+  #Layanan .containerLayanan {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #Layanan .LayananContentDir,
+  #Layanan .LayananContentChat {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto !important;
+    padding: 30px 20px !important;
+  }
+
+  #Layanan .logo h1,
+  #Layanan .logoChat h1 {
+    font-size: 18px !important;
+  }
+
+  #Layanan .buttonDir button,
+  #Layanan .buttonChat button {
+    width: 200px !important;
+    padding: 12px !important;
+    font-size: 14px;
+  }
+
+  /* === TAHUKAH KAMU === */
+  #Taukah {
+    padding: 60px 20px;
+  }
+
+  #Taukah .TaukahTitle {
+    width: 200px !important;
+    height: 60px !important;
+    font-size: 24px !important;
+  }
+
+  #Taukah .pengantarTaukah p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #Taukah .Wrapper {
+    gap: 20px;
+    margin-top: 30px;
+    overflow-x: hidden;
+  }
+
+  #Taukah .kotak {
+    width: 100% !important;
+    max-width: 400px;
+    height: auto !important;
+    min-height: 120px;
+    padding: 20px 15px !important;
+  }
+
+  #Taukah .kotak h1 {
+    font-size: 16px;
+    padding-left: 10px !important;
+  }
+
+  #Taukah .kotak h2 {
+    font-size: 14px;
+    padding-left: 20px !important;
+    margin-top: 10px;
+  }
+
+  /* === DIREKTORI UMKM === */
+  .DirTitle {
+    width: 300px !important;
+    height: 60px !important;
+    font-size: 20px !important;
+  }
+
+  .DirektoriList {
+    padding: 20px 10px !important;
+    gap: 15px !important;
+  }
+
+  .DirektoriList > a > div {
+    width: 250px !important;
+    height: 200px !important;
+  }
+
+  /* === FOOTER === */
+  footer {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 35px !important;
+    padding: 50px 25px 25px !important;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  footer .col1 {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer .col2 {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer #Logo {
+    justify-content: center !important;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer #Logo img {
+    width: 55px !important;
+  }
+
+  footer #Logo h1 {
+    font-size: 18px !important;
+    margin-left: -10px !important;
+  }
+
+  footer .text {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  footer .text h1 {
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+    text-align: center;
+  }
+
+  footer .sosmed {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px !important;
+    margin-top: 15px !important;
+    height: auto !important;
+    width: 100%;
+  }
+
+  footer .sosmed i {
+    font-size: 32px !important;
+  }
+
+  footer .col2 h1 {
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+    font-weight: 700 !important;
+  }
+
+  footer .isiCol {
+    gap: 10px !important;
+    align-items: center;
+  }
+
+  footer .isiCol p {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+    text-align: center;
+  }
+
+  .Copyrigth {
+    padding: 18px 25px !important;
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+    width: 100%;
+  }
+
+
+
 }
