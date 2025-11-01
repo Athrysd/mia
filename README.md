@@ -85,6 +85,8 @@ Sebagai contoh nyata penerapan teknologi digital dan kolaborasi tim dalam menduk
       ```bash
    npm start
 
+---
+
 ## 🚀 Quick Start
    ```bash
    git clone https://github.com/Athrysd/mia.git
