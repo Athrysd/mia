@@ -72,3 +72,23 @@ Sebagai contoh nyata penerapan teknologi digital dan kolaborasi tim dalam menduk
 1. Clone repository ini:
    ```bash
    git clone https://github.com/Athrysd/mia.git
+   
+2. Masuk ke folder proyek
+      ```bash
+   cd mia
+
+3. Install dependencies
+      ```bash
+   npm install
+
+4. Jalankan proyek
+      ```bash
+   npm start
+
+## 🚀 Quick Start
+   ```bash
+   git clone https://github.com/namauser/nama-repo.git
+   ```bash
+   cd mia
+   ```bash
+   npm install && npm run dev
