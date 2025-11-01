@@ -34,8 +34,83 @@
 }
 
 
+/* Scrollbar Direktori UMKM */
+.DirektoriList {
+  padding-bottom: 20px;
+}
+
 .DirektoriList::-webkit-scrollbar {
-  display: none;
+  height: 6px;
+}
+
+.DirektoriList::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 0 20px;
+}
+
+.DirektoriList::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #A05D7F, #D5A351);
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.DirektoriList::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #D5A351, #A05D7F);
+  transform: scaleY(1.3);
+  box-shadow: 0 2px 15px rgba(160, 93, 127, 0.4);
+}
+
+/* Direktori Card Styles */
+.direktori-card {
+  height: 250px;
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+}
+
+.direktori-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.direktori-card:hover::before {
+  height: 30%;
+}
+
+.direktori-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.direktori-card:hover img {
+  transform: scale(1.05);
+}
+
+.direktori-card h1 {
+  position: absolute;
+  bottom: -40px;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.direktori-card:hover h1 {
+  bottom: 20px;
 }
 
 
