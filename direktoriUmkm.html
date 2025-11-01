@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Direktori UMKMOVE</title>
-    <link rel="shortcut icon" href="UMKMOVELOGO.png" type="image/x-icon" />
+    <title>Direktori UMKM | UMKMOVE</title>
+    <link
+      rel="shortcut icon"
+      href="https://athrysd.github.io/asetMia/UMKMOVELOGO.png"
+      type="image/x-icon"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Tailwind  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +54,7 @@
 
     <section
       style="padding: 30px"
-      class="overflow-x-hidden bg-linear-to-b from-[#370B22] to-[#D2AC6C] w-[98.8vw] h-[600px]"
+      class="bg-linear-to-b from-[#370B22] to-[#D2AC6C] w-[98.8vw] h-[700px]"
     >
       <div class="aksesoris absolute top-0 right-0 z-[-1]">
         <img src="Rectangle 51.png" width="650px" alt="" />
@@ -107,31 +111,55 @@
             </button>
           </div>
           <div
-            style="margin-top: 75px"
-            class="pilihan flex flex-row justify-center gap-10"
+            style="margin-top: 50px"
+            class="pilihan flex flex-row justify-center gap-20"
           >
-            <a href=""
+            <a id="kategoriMakanan" href=""
               ><div
-                style="padding: 10px"
-                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
               >
-                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+                <img
+                  class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
+                  src="Rectangle 53.png"
+                  alt=""
+                />
+                <h1
+                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
+                >
+                  MAKANAN
+                </h1>
               </div></a
             >
-            <a href=""
+            <a id="kategoriMinuman" href=""
               ><div
-                style="padding: 10px"
-                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
               >
-                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+                <img
+                  class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
+                  src="Rectangle 54.png"
+                  alt=""
+                />
+                <h1
+                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
+                >
+                  MINUMAN
+                </h1>
               </div></a
             >
-            <a href=""
+            <a id="kategoriJasa" href=""
               ><div
-                style="padding: 10px"
-                class="h-[200px] w-[300px] shrink-0 rounded-2xl bg-blue-600 flex items-end"
+                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
               >
-                <h1 class="text-white font-bold">Lorem, ipsum.</h1>
+                <img
+                  class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
+                  src="Rectangle 55.png"
+                  alt=""
+                />
+                <h1
+                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
+                >
+                  JASA
+                </h1>
               </div></a
             >
           </div>
@@ -139,13 +167,736 @@
       </div>
     </section>
 
-    <section style="margin-top: 50px" id="makanan">
+    <section
+      style="margin-top: 50px; padding: 20px"
+      id="makanan"
+      class="kategoriMakanan flex flex-col gap-10 items-center"
+    >
       <div
-        class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-3xl font-semibold text-white shadow-lg"
+        class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
       >
         <h1>KATEGORI MAKANAN</h1>
       </div>
-      <div class="container"></div>
+
+      <div class="container flex flex-row gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row-reverse gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row-reverse gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row-reverse gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row-reverse gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container flex flex-row-reverse gap-20 items-start justify-center w-full max-w-[1400px] mx-auto">
+        <!-- Kiri - Penjelasan & Lokasi -->
+        <div class="kiri flex flex-col gap-10 w-[40%]">
+          <!-- Penjelasan -->
+          <div class="penjelasan flex flex-col gap-6">
+            <div
+              style="padding: 20px"
+              class="text1 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Mie Ayam Keraton adalah jenis warung mie ayam yang terkenal
+                dengan konsep "harga kaki lima, rasa bintang lima" dengan
+                varian menu yang disajikan secara komplet seperti mie ayam,
+                bakso, ceker, dan pangsit.
+              </h1>
+            </div>
+
+            <div
+              style="padding: 20px"
+              class="text2 bg-[#D9D9D9] rounded-lg shadow-lg"
+            >
+              <h1 class="text-base leading-relaxed">
+                Contoh varian harga dan menu Mie Ayam: Sekitar Rp8.000-Rp13.000
+                (tergantung lokasi dan waktu).
+              </h1>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+          <div class="lokasi flex flex-col justify-center items-center gap-5 mt-5">
+            <h1 class="text-2xl font-bold">LOKASI</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.352591615329!2d106.9273362!3d-6.2171476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d09bbe20d19%3A0x4461628c9df6c3a8!2sMie%20Ayam%20Keraton%20Delima%201!5e0!3m2!1sid!2sid!4v1761972171628!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: 15px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Kanan - Judul & Gambar -->
+        <div class="kananDirek flex flex-col gap-6 w-[40%] justify-center items-center">
+          <div
+            style="padding: 20px"
+            class="judulUMKM bg-[#370B22] w-[90%] text-3xl font-bold text-center text-white flex justify-center items-center rounded-lg shadow-lg"
+          >
+            <h1>1. Mie Ayam Keraton</h1>
+          </div>
+
+          <div class="colGam flex flex-col gap-6">
+            <div
+              class="gambar1 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar2 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div
+              class="gambar3 rounded-[30px] w-full bg-gradient-to-b from-[#370B22] to-[#D2AC6C] w-full h-[250px] overflow-hidden shadow-lg"
+            >
+              <img src="" alt="" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->

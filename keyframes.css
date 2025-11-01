@@ -46,6 +46,7 @@
 .DirektoriList::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
   margin: 0 20px;
+  border-radius : 50px;
 }
 
 .DirektoriList::-webkit-scrollbar-thumb {
