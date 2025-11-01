@@ -19,9 +19,31 @@ Proyek ini dibuat sebagai bagian dari kegiatan **lomba inovasi digital** untuk m
 ## 💡 Inovasi & Keunggulan
 - ✨ Desain modern, responsif, dan ramah pengguna menggunakan **Tailwind CSS**.  
 - 🔍 Fitur pencarian dan daftar UMKM yang dapat diakses publik.  
+- 🤖 Integrasi elemen **AI sederhana berbasis JavaScript & JSON** untuk interaksi cerdas.  
 - 🧩 Struktur data berbasis **JSON** agar mudah diperbarui tanpa backend kompleks.  
 - 💬 Fokus pada *user experience* dengan tampilan yang ringan dan cepat dimuat.  
 - 🧠 Dikembangkan secara kolaboratif melalui GitHub untuk melatih kerja tim dan version control.
+
+---
+
+## 🌟 Manfaat Proyek UMKMOVE
+- **🏪 Untuk Pelaku UMKM**:
+Menjadi media promosi gratis yang memperluas jangkauan pasar produk mereka.
+- **👥 Untuk Masyarakat**:
+Memudahkan masyarakat dalam menemukan, mengenal, dan membeli produk lokal.
+- **💻 Untuk Tim Pengembang**:
+Menambah pengalaman dalam kolaborasi proyek nyata menggunakan GitHub dan penerapan AI sederhana melalui JavaScript.
+- **📈 Untuk Dunia Pendidikan**:
+Sebagai contoh nyata penerapan teknologi digital dan kolaborasi tim dalam mendukung ekonomi mikro.
+
+---
+
+## 📌 Hasil & Harapan
+- Website menampilkan daftar UMKM lengkap dengan nama, lokasi, dan produk.
+- Tampilan responsif dan mudah digunakan di perangkat mobile maupun desktop.
+- Memiliki fitur AI sederhana untuk memperkaya interaksi pengguna.
+- Menjadi prototype potensial untuk dikembangkan menjadi marketplace digital UMKM di masa depan.
+- Mendorong semangat berinovasi dan berkolaborasi di kalangan pelajar.
 
 ---
 
@@ -29,7 +51,7 @@ Proyek ini dibuat sebagai bagian dari kegiatan **lomba inovasi digital** untuk m
 | Nama | Peran | Tugas |
 |------------|--------|--------|
 | **Alif Atallah Rasyad** | Project Owner / Front End Developer | Membuat tampilan website dengan Tailwind CSS dan membantu implementasi fitur interaktif |
-| **Lutfi IdhaM Puro** | AI & Front-End Developer | Membuat fitur AI berbasis JavaScript dan JSON, serta membantu pengembangan bagian Front-End |
+| **Lutfi Idham Puro** | AI & Front-End Developer | Membuat fitur AI berbasis JavaScript dan JSON, serta membantu pengembangan bagian Front-End |
 | **Khuzaefah Hauna** | Designer & UI/UX Support | Mendesain tampilan website dan struktur halaman utama & Membantu pembuatan layout dan tampilan user-friendly |
 
 ---
