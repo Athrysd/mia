@@ -25,6 +25,15 @@ Proyek ini dibuat sebagai bagian dari kegiatan **lomba inovasi digital** untuk m
 
 ---
 
+## 👥 Anggota Tim UMKMOVE
+| Nama | Peran | Tugas |
+|------------|--------|--------|
+| **Alif Atallah Rasyad** | Project Owner / Front End Developer | Membuat tampilan website dengan Tailwind CSS dan membantu implementasi fitur interaktif |
+| **Lutfi IdhaM Puro** | AI & Front-End Developer | Membuat fitur AI berbasis JavaScript dan JSON, serta membantu pengembangan bagian Front-End |
+| **Khuzaefah Hauna** | Designer & UI/UX Support | Mendesain tampilan website dan struktur halaman utama & Membantu pembuatan layout dan tampilan user-friendly |
+
+---
+
 ## 🛠️ Teknologi yang Digunakan
 | Teknologi | Fungsi |
 |------------|--------|
