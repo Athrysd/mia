@@ -117,7 +117,7 @@ AI:
 
     chatHistory.push({ role: "assistant", parts: [{ text: botText }] });
 
-    const formattedText = botText.replace(/\n/g, "<br>").replace(/\n/g, "<br>");
+    const formattedText = botText.replace(/\n/g, "<br>");
     return formattedText;
   } 
   catch (error) {
