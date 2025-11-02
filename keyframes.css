@@ -50,13 +50,13 @@
 }
 
 .DirektoriList::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #A05D7F, #D5A351);
+  background: #610b37;
   border-radius: 50px;
   transition: all 0.4s ease-in-out;
 }
 
 .DirektoriList::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(90deg, #D5A351, #A05D7F);
+  background: #370B22;
   transform: scaleY(1.3);
   box-shadow: 0 2px 15px rgba(160, 93, 127, 0.4);
 }
