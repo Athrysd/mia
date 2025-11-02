@@ -39,6 +39,15 @@
         padding: 0;
         font-family: "Poppins", sans-serif;
       }
+      
+
+      /* Style untuk option elements - hanya padding manual */
+      select option {
+        padding: 12px 16px;
+      }
+      select {
+        padding: 5px 10px;
+      }
     </style>
   </head>
   <body>
@@ -92,12 +101,13 @@
             </h1>
             <div class="searchBar">
               <input
+              id="searchInput"
                 style="padding: 10px; width: 250px"
                 type="text"
                 placeholder="Cari UMKM..."
                 class="rounded-full focus:outline-none text-white border-2 border-white h-[40px] bg-[rgba(255,255,255,0.2)] placeholder-white"
               />
-              <button
+              <a href="#makanan"><button
                 style="
                   padding: 10px;
                   margin-left: 10px;
@@ -107,61 +117,82 @@
                 class="rounded-full bg-white hover:bg-gray-200 transition"
               >
                 <i class="fa fa-search text-[#370B22]"></i>
-              </button>
+              </button></a>
             </div>
           </div>
           <div
             style="margin-top: 50px"
             class="pilihan flex flex-row justify-center gap-40 w-[1000px]"
           >
-            <a id="kategoriMakanan" href=""
-              ><div
-                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
-              >
+            <div
+              class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
+            >
+              <a href="#makanan">
                 <img
                   class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
                   src="Rectangle 53.png"
-                  alt=""
+                  alt="Makanan"
                 />
-                <h1
-                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
-                >
-                  MAKANAN
-                </h1>
-              </div></a
-            >
-            <a id="kategoriMinuman" href=""
-              ><div
-                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
+              </a>
+              <select style="padding: 5px 10px;"
+                class="text-white text-xl relative top-[50px] left-[15px] font-bold bg-gradient-to-r from-[#A05D7F]/30 to-[#D5A351]/30 backdrop-blur-md border-2 border-white/30 rounded-xl px-4 py-2 cursor-pointer outline-none transition-all duration-300 hover:from-[#A05D7F]/50 hover:to-[#D5A351]/50 hover:border-white/50 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#A05D7F]/40 focus:border-[#D5A351] focus:ring-4 focus:ring-[#D5A351]/30 appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-[right_10px_center] pr-9 shadow-[1px_1px_2px_rgba(0,0,0,0.5)]"
+                name="MAKANAN"
+                id="selectMakanan"
+                onchange="if(this.value) window.location.href=this.value"
               >
+                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">MAKANAN</option>
+                <option value="#UMKM_1" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Mie Ayam Keraton</option>
+                <option value="#UMKM_2" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Nasi Kuning JJM</option>
+                <option value="#UMKM_3" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Seblak Mewek</option>
+                <option value="#UMKM_4" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Dapoer Kita</option>
+                <option value="#UMKM_5" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Mi Aceh Lamlo</option>
+              </select>
+            </div>
+
+            <div
+              class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
+            >
+              <a href="#kategoriMinuman">
                 <img
                   class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
                   src="Rectangle 54.png"
-                  alt=""
+                  alt="Minuman"
                 />
-                <h1
-                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
-                >
-                  MINUMAN
-                </h1>
-              </div></a
-            >
-            <a id="kategoriJasa" href=""
-              ><div
-                class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start rounded-2xl overflow-hidden"
+              </a>
+              <select
+                class="text-white text-xl relative top-[50px] left-[15px] font-bold bg-gradient-to-r from-[#A05D7F]/30 to-[#D5A351]/30 backdrop-blur-md border-2 border-white/30 rounded-xl px-4 py-2 cursor-pointer outline-none transition-all duration-300 hover:from-[#A05D7F]/50 hover:to-[#D5A351]/50 hover:border-white/50 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#A05D7F]/40 focus:border-[#D5A351] focus:ring-4 focus:ring-[#D5A351]/30 appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-[right_10px_center] pr-9 shadow-[1px_1px_2px_rgba(0,0,0,0.5)]"
+                name="MINUMAN"
+                id="selectMinuman"
+                onchange="if(this.value) window.location.href=this.value"
               >
+                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">MINUMAN</option>
+                <option value="#UMKM_6" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Coffe Calf</option>
+                <option value="#UMKM_7" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Pocket Coffe</option>
+                <option value="#UMKM_8" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">kopi .dll</option>
+              </select>
+            </div>
+
+            <div
+              class="h-[250px] w-[250px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
+            >
+              <a href="#kategoriJasa">
                 <img
                   class="w-full h-full object-cover transition-transform duration-300 rounded-2xl ease-in-out hover:scale-105"
                   src="Rectangle 55.png"
-                  alt=""
+                  alt="Jasa"
                 />
-                <h1
-                  class="text-white text-xl relative top-[40px] left-[15px] font-bold"
-                >
-                  JASA
-                </h1>
-              </div></a
-            >
+              </a>
+              <select
+                class="text-white text-xl relative top-[50px] left-[15px] font-bold bg-gradient-to-r from-[#A05D7F]/30 to-[#D5A351]/30 backdrop-blur-md border-2 border-white/30 rounded-xl px-4 py-2 cursor-pointer outline-none transition-all duration-300 hover:from-[#A05D7F]/50 hover:to-[#D5A351]/50 hover:border-white/50 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#A05D7F]/40 focus:border-[#D5A351] focus:ring-4 focus:ring-[#D5A351]/30 appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-[right_10px_center] pr-9 shadow-[1px_1px_2px_rgba(0,0,0,0.5)]"
+                name="JASA"
+                id="selectJasa"
+                onchange="if(this.value) window.location.href=this.value"
+              >
+                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">JASA</option>
+                <option value="#UMKM_9" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Anyar Barbershop</option>
+                <option value="#UMKM_10" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Cotton Loundry</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -174,6 +205,7 @@
       class="kategoriMakanan flex flex-col gap-10 items-center"
     >
       <div
+      id="kategoriMakanan"
         class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
       >
         <h1>KATEGORI MAKANAN</h1>
@@ -234,7 +266,7 @@
 
           <!-- bagian kanan -->
           <div
-            style="margin: 0; padding: 0;"
+            style="margin: 0; padding: 0"
             class="garisAksesoris absolute w-1 h-[475px] bg-[#370B22] top-[900px]"
           ></div>
           <div
@@ -328,14 +360,15 @@
                 class="peta bg-[#D9D9D9] rounded-2xl shadow-lg mt-3 p-3 flex justify-center items-center shadow-lg"
               >
                 <iframe
-                class="rounded-2xl"
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.325401136584!2d106.9042783!3d-6.2207520999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3003bc73ee9%3A0xc4d44fb51b9a07cf!2sNASI%20KUNING%20%26%20NASI%20UDUK%20JJM!5e0!3m2!1sid!2sid!4v1762064330958!5m2!1sid!2sid"
-                 width="400" 
-                 height="275" 
-                 style="border:0;" 
-                 allowfullscreen="" 
-                 loading="lazy" 
-                 referrerpolicy="no-referrer-when-downgrade">
+                  class="rounded-2xl"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.325401136584!2d106.9042783!3d-6.2207520999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3003bc73ee9%3A0xc4d44fb51b9a07cf!2sNASI%20KUNING%20%26%20NASI%20UDUK%20JJM!5e0!3m2!1sid!2sid!4v1762064330958!5m2!1sid!2sid"
+                  width="400"
+                  height="275"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
                 </iframe>
               </div>
               <!-- peta end -->
@@ -365,10 +398,10 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Hadir dengan pilihan nasi kuning dan nasi uduk yang
-                dimasak dengan cita rasa khas Nusantara.
-                Disajikan hangat lengkap dengan lauk lezat dari food truck — praktis, 
-                higienis, dan selalu menggugah selera
+                Hadir dengan pilihan nasi kuning dan nasi uduk yang dimasak
+                dengan cita rasa khas Nusantara. Disajikan hangat lengkap dengan
+                lauk lezat dari food truck — praktis, higienis, dan selalu
+                menggugah selera
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -391,10 +424,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : Jl. Dermaga Raya No.99A, RT.5, Klender,
-                Kec. Duren Sawit, Kota Jakarta Timur, 
-                Daerah Khusus Ibukota Jakarta 13470
-                <br>Buka : 18.00 - 22.00
+                Lokasi : Jl. Dermaga Raya No.99A, RT.5, Klender, Kec. Duren
+                Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13470
+                <br />Buka : 18.00 - 22.00
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -439,16 +471,17 @@
                 style="padding: 5px"
                 class="peta bg-[#D9D9D9] rounded-2xl shadow-lg mt-3 p-3 flex justify-center items-center shadow-lg"
               >
-              <iframe 
-              class="rounded-2xl"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.86259144267!2d106.88664776710776!3d-6.202137948107408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e7d7e6bcb5%3A0x5f9d9cc38f8bf919!2sSeblak%20Mewek%20Jatinegara!5e0!3m2!1sid!2sid!4v1762065802970!5m2!1sid!2sid" 
-              width="400" 
-              height="275" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                <iframe
+                  class="rounded-2xl"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.86259144267!2d106.88664776710776!3d-6.202137948107408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e7d7e6bcb5%3A0x5f9d9cc38f8bf919!2sSeblak%20Mewek%20Jatinegara!5e0!3m2!1sid!2sid!4v1762065802970!5m2!1sid!2sid"
+                  width="400"
+                  height="275"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
               </div>
               <!-- peta end -->
             </div>
@@ -477,9 +510,10 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Nikmati seblak pedas dengan cita rasa khas yang bikin melek dan mewek! 
-                Isian lengkap mulai dari kerupuk kenyal, mie, bakso, hingga ceker, 
-                dimasak dengan bumbu pedas gurih yang menggugah selera.
+                Nikmati seblak pedas dengan cita rasa khas yang bikin melek dan
+                mewek! Isian lengkap mulai dari kerupuk kenyal, mie, bakso,
+                hingga ceker, dimasak dengan bumbu pedas gurih yang menggugah
+                selera.
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -490,7 +524,7 @@
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
-                <li>berbagai paket seblak mulai dari Rp6.000, </li>
+                <li>berbagai paket seblak mulai dari Rp6.000,</li>
                 <li>dan Banyak pilihan toping mulai dari Rp2.000</li>
               </ul>
               <!-- Deskripsi UMKM end -->
@@ -501,8 +535,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : Jl. H. Ismail No.51 12, RT.7/RW.3, Jatinegara, Kec. Cakung, Kota Jakarta Timur, 
-                Daerah Khusus Ibukota Jakarta 13930 <br>
+                Lokasi : Jl. H. Ismail No.51 12, RT.7/RW.3, Jatinegara, Kec.
+                Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13930
+                <br />
                 Buka : 10.00-22.00
               </p>
               <!-- Deskripsi UMKM end -->
@@ -549,16 +584,17 @@
                 style="padding: 5px"
                 class="peta bg-[#D9D9D9] rounded-2xl shadow-lg mt-3 p-3 flex justify-center items-center shadow-lg"
               >
-              <iframe 
-                class="rounded-2xl"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.94829999709!2d106.82020442167963!3d-6.197999900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4be9bee75c1%3A0x2c74a635b1d3bc12!2sDapoer%20Kita!5e0!3m2!1sid!2sid!4v1762066637272!5m2!1sid!2sid" 
-                width="400" 
-                height="275" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
+                <iframe
+                  class="rounded-2xl"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.94829999709!2d106.82020442167963!3d-6.197999900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4be9bee75c1%3A0x2c74a635b1d3bc12!2sDapoer%20Kita!5e0!3m2!1sid!2sid!4v1762066637272!5m2!1sid!2sid"
+                  width="400"
+                  height="275"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
               </div>
               <!-- peta end -->
             </div>
@@ -601,10 +637,11 @@
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
-                <li>Dapoer Kite menyediakan berbagai macam makanan
-                   dan minuman mulai dari makanan ringan sampai berat, 
-                    Harga mulai dari Rp25.000-Rp50.000
-                  </li>
+                <li>
+                  Dapoer Kite menyediakan berbagai macam makanan dan minuman
+                  mulai dari makanan ringan sampai berat, Harga mulai dari
+                  Rp25.000-Rp50.000
+                </li>
               </ul>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -614,8 +651,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : Blk. A Jl. Tenggiri No.3, RT.17/RW.6, Jati, Kec. Pulo Gadung, 
-                Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220<br>
+                Lokasi : Blk. A Jl. Tenggiri No.3, RT.17/RW.6, Jati, Kec. Pulo
+                Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta
+                13220<br />
                 Buka : 10.00-23.00
               </p>
               <!-- Deskripsi UMKM end -->
@@ -699,9 +737,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Hadir dengan cita rasa rempah khas Aceh yang kuat dan menggugah selera! 
-                Mie tebal nan kenyal dimasak dengan bumbu pedas gurih yang khas,
-                menghadirkan sensasi rasa otentik di setiap suapan.
+                Hadir dengan cita rasa rempah khas Aceh yang kuat dan menggugah
+                selera! Mie tebal nan kenyal dimasak dengan bumbu pedas gurih
+                yang khas, menghadirkan sensasi rasa otentik di setiap suapan.
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -712,11 +750,11 @@
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
-                <li>Mie Aceh Lamlo menyediakan dua tipe mie,
-                   mie rebus dengan toping daging, 
-                   udang dan cumi Rp35.000, 
-                   dan mie goreng dengan toping daging Rp23.000
-                  </li>
+                <li>
+                  Mie Aceh Lamlo menyediakan dua tipe mie, mie rebus dengan
+                  toping daging, udang dan cumi Rp35.000, dan mie goreng dengan
+                  toping daging Rp23.000
+                </li>
               </ul>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -726,10 +764,10 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : Raya, Jl. Bekasi Timur IX No.1, RT.8/RW.1,
-                 Jatinegara, Kec. Cakung, Kota Jakarta Timur,
-                 Daerah Khusus Ibukota Jakarta 13390
-                <br>Buka : 10.00-23.00
+                Lokasi : Raya, Jl. Bekasi Timur IX No.1, RT.8/RW.1, Jatinegara,
+                Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta
+                13390
+                <br />Buka : 10.00-23.00
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -738,6 +776,13 @@
         </div>
         <!-- Isi UMKM end -->
       </main>
+
+      <div
+        id="kategoriMinuman"
+        class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
+      >
+        <h1>KATEGORI MINUMAN</h1>
+      </div>
 
       <!-- UMKM 2 -->
       <main style="margin-bottom: 50px" id="UMKM_6">
@@ -924,9 +969,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Kopi praktis dengan cita rasa premium yang bisa dinikmati kapan saja! 
-                Dikemas ringkas dan siap saji, 
-                Pocket Coffee menghadirkan aroma kopi yang kuat dan rasa manis lembut dalam setiap tegukan.
+                Kopi praktis dengan cita rasa premium yang bisa dinikmati kapan
+                saja! Dikemas ringkas dan siap saji, Pocket Coffee menghadirkan
+                aroma kopi yang kuat dan rasa manis lembut dalam setiap tegukan.
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -937,9 +982,9 @@
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
-                <li>Pocket Coffee menyediakan Kopi dengan berbagai rasa mulai dari 
-                  Rp6.000-Rp12.000, dan juga Non-Kopi 
-                  mulai dari Rp12.000
+                <li>
+                  Pocket Coffee menyediakan Kopi dengan berbagai rasa mulai dari
+                  Rp6.000-Rp12.000, dan juga Non-Kopi mulai dari Rp12.000
                 </li>
               </ul>
               <!-- Deskripsi UMKM end -->
@@ -950,7 +995,8 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : Jl. Anggrek II No.101, RT.003/RW.009, Jatiwarna, Kec. Pd. Melati, Kota Bks, Jawa Barat 17415
+                Lokasi : Jl. Anggrek II No.101, RT.003/RW.009, Jatiwarna, Kec.
+                Pd. Melati, Kota Bks, Jawa Barat 17415
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -1036,8 +1082,8 @@
               <p class="text-justify">
                 Tersedia berbagai pilihan minuman mulai dari kopi dengan aroma
                 khas hingga minuman segar yang cocok dinikmati kapan saja.
-                Setiap sajian dibuat untuk
-                menemani harimu dengan rasa yang nikmat dan menyegarkan.
+                Setiap sajian dibuat untuk menemani harimu dengan rasa yang
+                nikmat dan menyegarkan.
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -1048,7 +1094,10 @@
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
-                <li>Kopi .dll menyediakan berbagai minuman (kopi dan Non-Kopi) dan juga makanan seperti kue dan roti, mulai dari Rp12.000</li>
+                <li>
+                  Kopi .dll menyediakan berbagai minuman (kopi dan Non-Kopi) dan
+                  juga makanan seperti kue dan roti, mulai dari Rp12.000
+                </li>
               </ul>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -1059,8 +1108,8 @@
             >
               <p class="text-justify">
                 Lokasi : KM 17 No. 12, Jl. Raya Bekasi No.RT05, RW.3,
-                 Jatinegara, Kec. Cakung, Kota Jakarta Timur, 
-                 Daerah Khusus Ibukota Jakarta 13930<br>
+                Jatinegara, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus
+                Ibukota Jakarta 13930<br />
                 Buka : Sen-Jum 07.00-17.00
               </p>
               <!-- Deskripsi UMKM end -->
@@ -1070,6 +1119,14 @@
         </div>
         <!-- Isi UMKM end -->
       </main>
+
+      <div
+        id="kategoriJasa"
+        class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
+      >
+        <h1>KATEGORI JASA</h1>
+      </div>
+
       <!-- UMKM 1 -->
       <main style="margin-bottom: 50px" id="UMKM_9">
         <!-- Judul UMKM -->
@@ -1144,9 +1201,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Tempat potong rambut yang menawarkan gaya kekinian dengan harga terjangkau.
-                 Pelayanannya cepat, hasilnya rapi,
-                  dan bikin kamu tampil makin keren setiap saat.
+                Tempat potong rambut yang menawarkan gaya kekinian dengan harga
+                terjangkau. Pelayanannya cepat, hasilnya rapi, dan bikin kamu
+                tampil makin keren setiap saat.
               </p>
               <!-- Deskripsi UMKM end -->
             </div>
@@ -1170,9 +1227,9 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Lokasi : 7, Jl. Puskesmas No.7, RT.6/RW.3, Jatinegara,
-                Kec. Cakung, Kota Jakarta Timur,
-                Daerah Khusus Ibukota Jakarta 13930<br>
+                Lokasi : 7, Jl. Puskesmas No.7, RT.6/RW.3, Jatinegara, Kec.
+                Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta
+                13930<br />
                 Buka : 10.00-22.00
               </p>
               <!-- Deskripsi UMKM end -->
@@ -1284,7 +1341,8 @@
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md"
             >
               <p class="text-justify">
-                Jl. Waru No.20, Rawamangun, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220 <br>
+                Jl. Waru No.20, Rawamangun, Kec. Pulo Gadung, Kota Jakarta
+                Timur, Daerah Khusus Ibukota Jakarta 13220 <br />
                 Buka : 09.00 - 22.00
               </p>
               <!-- Deskripsi UMKM end -->
@@ -1387,5 +1445,6 @@
       <p>Copyright &copy; 2025 Mi Ayam Brigade</p>
     </div>
     <!-- Footer End -->
+     <script src="script.js"></script>
   </body>
 </html>

@@ -133,13 +133,13 @@
   }
 
   #Beranda .container h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.3;
     margin-bottom: 20px;
   }
 
   #Beranda .container p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
   }
 
@@ -227,6 +227,10 @@
     width: 200px !important;
     padding: 12px !important;
     font-size: 14px;
+  }
+  #Layanan  p{
+    font-size: 12px;
+    line-height: 1.5;
   }
 
   /* === TAHUKAH KAMU === */
