@@ -36,6 +36,26 @@
   overflow: hidden;
 }
 
+.chat-box::-webkit-scrollbar{
+  width: 5px;
+}
+
+.chat-box::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb{
+  background: #610b37;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover{
+  background: #370B22;
+  transform: scaleX(1.2);
+}
+
 .chat-box{
   flex: 1;
   overflow-y: auto;
@@ -54,7 +74,7 @@
 }
 
 .user-message{
-  background-color: #A05D7F;
+  background-color: #370B22;
   color: white;
   align-self: flex-end;
   margin-left: auto; 
@@ -84,7 +104,7 @@
 }
 
 #send-btn{
-  background-color: #D5A321;
+  background-color: #370B22;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -95,7 +115,7 @@
 }
 
 #send-btn:hover{
-background-color: #C47C00;
+background-color: #610b37;
 }
 
 .bot-message {
