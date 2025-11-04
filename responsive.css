@@ -113,27 +113,23 @@
     position: static;
     width: 100%;
     max-width: 100%;
+    padding:  0 10px 0 25px;
   }
 
   #Beranda .container .kiri {
     width: 90%;
     max-width: 500px;
-    padding: 30px 20px;
+    padding: 30px 30px;
     margin-top: 50px;
   }
 
-  #Beranda .container .kanan {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-  }
 
   #Beranda .container .kanan img {
     display: none;
   }
 
   #Beranda .container h1 {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1.3;
     margin-bottom: 20px;
   }
@@ -196,6 +192,7 @@
     width: 260px !important;
     height: 60px !important;
     font-size: 20px !important;
+    margin: 0 auto;
   }
 
   #Layanan .AtasLayanan p {
@@ -220,6 +217,9 @@
   #Layanan .logo h1,
   #Layanan .logoChat h1 {
     font-size: 18px !important;
+  }
+  #Layanan .logoChat h1 span {
+    color: #370b22;
   }
 
   #Layanan .buttonDir button,
@@ -271,6 +271,7 @@
     font-size: 16px;
     padding-left: 10px !important;
   }
+  
 
   #Taukah .kotak h2 {
     font-size: 14px;
@@ -295,12 +296,21 @@
     height: 200px !important;
   }
 
+  .btnbawah{
+    margin-bottom: 50px;
+  }
+  .btnbawah a button{
+    width: 200px !important;
+    padding: 10px !important;
+    font-size: 12px;
+  }
+
   /* === FOOTER === */
   footer {
     flex-direction: column !important;
     flex-wrap: nowrap !important;
     gap: 35px !important;
-    padding: 50px 25px 25px !important;
+    padding: 25px !important;
     text-align: center;
     align-items: center !important;
     justify-content: center !important;
@@ -329,7 +339,7 @@
 
   footer #Logo {
     justify-content: center !important;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
     flex-direction: row;
     align-items: center;
   }
