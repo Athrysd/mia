@@ -95,7 +95,8 @@
             class="atas flex flex-row justify-center gap-100 items-center w-[1000px]"
           >
             <h1
-              class="text-white text-center text-2xl font-semibold after:content-[''] after:block after:w-40 after:h-[1px] after:bg-white after:mt-2 after:mx-auto"
+              class="text-white text-center text-2xl font-semibold 
+              after:content-[''] after:block after:w-40 after:h-[1px] after:bg-white after:mt-2 after:mx-auto"
             >
               KATEGORI UMKM
             </h1>
@@ -105,19 +106,23 @@
                 style="padding: 10px; width: 250px"
                 type="text"
                 placeholder="Cari UMKM..."
-                class="rounded-full focus:outline-none text-white border-2 border-white h-[40px] bg-[rgba(255,255,255,0.2)] placeholder-white"
+                class="rounded-full focus:outline-none text-white border-2 border-white h-[40px] 
+                bg-[rgba(255,255,255,0.2)] placeholder-white"
               />
-              <a href="#makanan"><button
+              <button onclick="document.getElementById('searchInput').value=''; searchData('')"
                 style="
-                  padding: 10px;
+                margin-top: 5px;
+                margin-bottom : -5px;
+                  padding-top: 5px;
                   margin-left: 10px;
-                  width: 40px;
-                  height: 40px;
+                  width:  35px;
+                  height: 35px;
+                  background-color: #ffffff;
                 "
                 class="rounded-full bg-white hover:bg-gray-200 transition"
               >
-                <i class="fa fa-search text-[#370B22]"></i>
-              </button></a>
+                <i class="fa fa-circle-xmark text-2xl text-[#370B22]"></i>
+              </button>
             </div>
           </div>
           <div
@@ -731,8 +736,9 @@
       <main style="margin-bottom: 50px" id="UMKM_6">
         <!-- Judul UMKM -->
         <div
-          style="padding: 5px 20px; margin-left: 210px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[580px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          style="padding: 5px 20px; margin-left: 230px"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
+          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Coffee Calf</h1>
         </div>
@@ -830,7 +836,8 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[580px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
+          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Pocket Coffee</h1>
         </div>
@@ -927,8 +934,9 @@
       <main style="margin-bottom: 50px" id="UMKM_8">
         <!-- Judul UMKM -->
         <div
-          style="padding: 5px 20px; margin-left: 210px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[580px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          style="padding: 5px 20px; margin-left: 230px"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
+          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Kopi .dll</h1>
         </div>
@@ -1036,7 +1044,8 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[580px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
+          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Anyar Barbershop</h1>
         </div>
@@ -1135,8 +1144,9 @@
       <main style="margin-bottom: 50px" id="UMKM_10">
         <!-- Judul UMKM -->
         <div
-          style="padding: 5px 20px; margin-left: 210px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[580px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          style="padding: 5px 20px; margin-left: 230px"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
+          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Cotton Laundry</h1>
         </div>

@@ -20,7 +20,7 @@ function searchData(filter) {
         titleMakanan.classList.add("hidden")
         titleMinuman.classList.add("hidden")
         titleJasa.classList.add("hidden")
-        
+
         list.forEach((item) => {
             if (item.innerHTML.toLowerCase().includes(filter.toLowerCase())) {
                 item.classList.remove("hidden");
@@ -30,4 +30,22 @@ function searchData(filter) {
         });
     }
 }
+// if(search.focus){
+//     document.addEventListener("keydown", function(){
+//         const target = 'makanan';
+//         if(Event.key === 'enter'){
+//             window.location.hash = '#' + target;
+//         }
+//     })
+// }
 
+
+search.addEventListener("keydown", function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        const target = document.getElementById('makanan');
+        if(target){
+            target.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+});
