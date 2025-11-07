@@ -1,0 +1,732 @@
+/* ===== TABLET BREAKPOINT (768px - 1024px) ===== */
+@media (max-width: 1024px) {
+  /* Prevent horizontal scroll */
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Hero Section */
+  section:first-of-type {
+    padding: 20px !important;
+    height: auto !important;
+    min-height: 600px;
+    margin-top: 0 !important;
+    width: 100vw !important;
+    overflow-x: hidden;
+  }
+
+  section {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  main {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .aksesoris {
+    display: none; /* Hide decorative element */
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .welcome {
+    width: 90% !important;
+    height: auto !important;
+    padding: 25px 20px !important;
+    margin-right: 0 !important;
+  }
+
+  .welcome h1 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  .welcome p {
+    font-size: 1rem !important;
+    line-height: 1.6;
+  }
+
+  /* Home Button */
+  .tombolHome {
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .tombolHome button {
+    right: 15px !important;
+    bottom: 15px !important;
+    width: 54px !important;
+    height: 54px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 12px rgba(55, 11, 34, 0.4) !important;
+  }
+
+  .tombolHome button i {
+    font-size: 1.4rem !important;
+  }
+
+  /* Kategori Section */
+  .kategori {
+    margin-top: 30px !important;
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  .kategori .atas {
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    gap: 2rem;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .kategori .atas h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .kategori .atas h1::after {
+    width: 100px !important;
+    margin: 0.5rem auto 0;
+  }
+
+  /* Search Bar */
+  .searchBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .searchBar input {
+    width: 300px !important;
+    padding: 12px !important;
+  }
+
+  .searchBar button,
+  .searchBar a button {
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+    margin-left: -45px !important;
+  }
+
+  .searchBar a {
+    margin-left: 10px;
+  }
+
+  /* Pilihan Kategori */
+  .pilihan {
+    width: 100% !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 30px !important;
+    overflow-x: hidden;
+    padding: 0 20px;
+  }
+
+  .pilihan > div {
+    width: clamp(280px, 45%, 350px);
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pilihan a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .pilihan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .pilihan select {
+    position: absolute !important;
+    bottom: 15px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 87%;
+    font-size: 1rem;
+    z-index: 20;
+  }
+
+  /* Kategori Headers */
+  #kategoriMakanan,
+  #kategoriMinuman,
+  #kategoriJasa {
+    width: min(90%, 450px) !important;
+    height: 60px !important;
+    font-size: 1.3rem !important;
+    padding: 0 15px;
+  }
+
+  /* UMKM Sections */
+  main[id^="UMKM_"] {
+    margin-bottom: 40px !important;
+    padding: 0 15px;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .titleUMKM {
+    margin: 0 auto 30px auto !important;
+    width: min(85vw, 320px) !important;
+    height: 65px !important;
+    font-size: 1.3rem !important;
+    padding: 10px 15px !important;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .titleUMKM::after {
+    display: none !important;
+  }
+
+  .isiUMKM {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: hidden;
+  }
+
+  .isiUMKM .kiriIsiUMKM,
+  .isiUMKM .kananIsiUMKM {
+    width: 100% !important;
+    max-width: 500px;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .isiUMKM .gambarUMKM img {
+    width: 100% !important;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .isiUMKM .lokasi {
+    width: 100%;
+  }
+
+  .isiUMKM .lokasi h1 {
+    font-size: 1.5rem;
+  }
+
+  .isiUMKM .lokasi .peta {
+    width: 100%;
+    padding: 10px !important;
+  }
+
+  .isiUMKM .lokasi iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .deskripsiUMKM {
+    width: 100%;
+    padding: 15px !important;
+  }
+
+  .deskripsiUMKM::before,
+  .deskripsiUMKM::after {
+    display: none !important;
+  }
+
+  .deskripsiUMKM p,
+  .deskripsiUMKM ul {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 30px 20px 20px 20px !important;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  footer .col1 {
+    margin-top: 0 !important;
+  }
+
+  footer .col1 .text h1 {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  footer .col1,
+  footer .col2 {
+    width: 100%;
+  }
+
+  footer .col2 h1 {
+    font-size: 1.1rem;
+  }
+
+  footer .col2 .isiCol p {
+    font-size: 0.95rem;
+  }
+
+  footer .sosmed {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 20px !important;
+  }
+
+  footer .sosmed i {
+    font-size: 2rem !important;
+  }
+
+  .Copyrigth {
+    padding: 20px 15px !important;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== MOBILE BREAKPOINT (max 640px) ===== */
+@media (max-width: 640px) {
+  /* Prevent horizontal scroll on mobile */
+  * {
+    overflow-x: hidden;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  section,
+  main {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Hero Section */
+  section:first-of-type {
+    padding: 15px !important;
+    min-height: 500px;
+    overflow-x: hidden;
+  }
+
+  .welcome {
+    width: 95% !important;
+    padding: 20px 15px !important;
+    gap: 1rem !important;
+  }
+
+  .welcome h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+  }
+
+  .welcome p {
+    font-size: 0.9rem !important;
+    line-height: 1.5;
+  }
+
+  /* Home Button */
+  .tombolHome {
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .tombolHome button {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0 !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 3px 10px rgba(55, 11, 34, 0.5) !important;
+  }
+
+  .tombolHome button i {
+    font-size: 1.3rem !important;
+  }
+
+  /* Kategori */
+  .kategori {
+    margin-top: 20px !important;
+    overflow-x: hidden;
+  }
+
+  .kategori .atas {
+    gap: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .kategori .atas h1 {
+    font-size: 1.2rem !important;
+  }
+
+  .kategori .atas h1::after {
+    width: 80px !important;
+  }
+
+  /* Search Bar */
+  .searchBar {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px;
+    justify-content: center;
+  }
+
+  .searchBar input {
+    width: 220px !important;
+    padding: 10px !important;
+    font-size: 0.9rem;
+  }
+
+  .searchBar button {
+    width: 30px !important;
+    height: 30px !important;
+    margin-left: -40px !important;
+  }
+
+  .searchBar a button {
+    width: 38px !important;
+    height: 38px !important;
+    margin-left: 8px !important;
+  }
+
+  .searchBar button i {
+    font-size: 0.9rem !important;
+  }
+
+  /* Pilihan */
+  .pilihan {
+    gap: 2rem;
+    margin-top: 20px !important;
+    overflow-x: hidden;
+    padding: 0 15px;
+  }
+
+  .pilihan > div {
+    width: 100% !important;
+    max-width: 340px;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pilihan a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .pilihan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .pilihan select {
+    font-size: 0.95rem !important;
+    width: 88%;
+    padding: 8px 10px !important;
+    position: absolute !important;
+    bottom: 15px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+
+  /* Kategori Headers */
+  #kategoriMakanan,
+  #kategoriMinuman,
+  #kategoriJasa {
+    width: 95% !important;
+    height: 55px !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* UMKM Sections */
+  main[id^="UMKM_"] {
+    margin-bottom: 30px !important;
+    padding: 0 10px;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  .titleUMKM {
+    width: 90% !important;
+    max-width: 280px;
+    height: 60px !important;
+    font-size: 1.1rem !important;
+    padding: 8px 12px !important;
+    margin-bottom: 25px !important;
+    overflow: hidden;
+  }
+
+  .isiUMKM {
+    gap: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .isiUMKM .kiriIsiUMKM,
+  .isiUMKM .kananIsiUMKM {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .isiUMKM .gambarUMKM img {
+    max-width: 320px;
+  }
+
+  .isiUMKM .lokasi h1 {
+    font-size: 1.3rem;
+  }
+
+  .isiUMKM .lokasi .peta {
+    padding: 8px !important;
+  }
+
+  .isiUMKM .lokasi iframe {
+    height: 240px;
+  }
+
+  .deskripsiUMKM {
+    padding: 12px !important;
+  }
+
+  .deskripsiUMKM p,
+  .deskripsiUMKM ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .kananIsiUMKM ul {
+    padding-left: 1.25rem;
+  }
+
+  .kananIsiUMKM ul li {
+    margin-bottom: 0.3rem;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 35px !important;
+    padding: 25px !important;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  footer .col1 {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer .col2 {
+    width: 100% !important;
+    max-width: 100%;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer #Logo {
+    justify-content: center !important;
+    margin-bottom: -20px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer #Logo img {
+    width: 55px !important;
+  }
+
+  footer #Logo h1 {
+    font-size: 18px !important;
+    margin-left: -10px !important;
+  }
+
+  footer .text {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  footer .text h1 {
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+    text-align: center;
+  }
+
+  footer .sosmed {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px !important;
+    margin-top: 15px !important;
+    height: auto !important;
+    width: 100%;
+  }
+
+  footer .sosmed i {
+    font-size: 32px !important;
+  }
+
+  footer .col2 h1 {
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+    font-weight: 700 !important;
+  }
+
+  footer .isiCol {
+    gap: 10px !important;
+    align-items: center;
+  }
+
+  footer .isiCol p {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+    text-align: center;
+  }
+
+  .Copyrigth {
+    padding: 18px 25px !important;
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+    width: 100%;
+  }
+}
+
+/* ===== SMALL MOBILE (max 420px) ===== */
+@media (max-width: 420px) {
+  /* Extra prevention for horizontal scroll */
+  * {
+    overflow-x: hidden;
+  }
+
+  body,
+  html,
+  section,
+  main {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Home Button - Smaller for very small screens */
+  .tombolHome button {
+    width: 46px !important;
+    height: 46px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    padding: 0 !important;
+  }
+
+  .tombolHome button i {
+    font-size: 1.1rem !important;
+  }
+
+  .welcome h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .welcome p {
+    font-size: 0.85rem !important;
+  }
+
+  .searchBar input {
+    width: 180px !important;
+    font-size: 0.85rem;
+  }
+
+  .pilihan select {
+    font-size: 0.85rem !important;
+    padding: 6px 8px !important;
+    width: 85%;
+  }
+
+  #kategoriMakanan,
+  #kategoriMinuman,
+  #kategoriJasa {
+    font-size: 1rem !important;
+    height: 50px !important;
+  }
+
+  .titleUMKM {
+    font-size: 1rem !important;
+    height: 55px !important;
+  }
+
+  .isiUMKM .gambarUMKM img {
+    max-width: 280px;
+  }
+
+  .deskripsiUMKM p,
+  .deskripsiUMKM ul {
+    font-size: 0.85rem;
+  }
+
+  footer .col1 .text h1 {
+    font-size: 0.8rem;
+  }
+
+  .Copyrigth {
+    font-size: 0.8rem;
+  }
+}
