@@ -39,7 +39,6 @@
         padding: 0;
         font-family: "Poppins", sans-serif;
       }
-      
 
       /* Style untuk option elements - hanya padding manual */
       select option {
@@ -72,7 +71,7 @@
       <div
         class="container flex flex-col justify-center gap-0 items-center mx-auto h-full max-w-[2000px]"
       >
-        <div
+        <div data-aos="fade-down" data-aos-duration="1500"
           style="padding: 20px 30px"
           class="welcome flex flex-col gap-5 shadow-[5px_5px_30px_rgba(0,0,0,0.5)] backdrop-blur-3xl bg-[rgba(217,217,217,0.2)] text-white rounded-3xl mr-10 w-[85%] h-[30%]"
         >
@@ -94,42 +93,59 @@
           <div
             class="atas flex flex-row justify-center gap-100 items-center w-[1000px]"
           >
-            <h1
-              class="text-white text-center text-2xl font-semibold 
-              after:content-[''] after:block after:w-40 after:h-[1px] after:bg-white after:mt-2 after:mx-auto"
+            <h1 data-aos="fade-left" data-aos-duration="1500"
+              class="text-white text-center text-2xl font-semibold after:content-[''] after:block after:w-40 after:h-[1px] after:bg-white after:mt-2 after:mx-auto"
             >
               KATEGORI UMKM
             </h1>
-            <div class="searchBar">
-              <input
-              id="searchInput"
+            <div class="searchBar" data-aos="fade-right" data-aos-duration="1500">
+              <input 
+                id="searchInput"
                 style="padding: 10px; width: 250px"
                 type="text"
                 placeholder="Cari UMKM..."
-                class="rounded-full focus:outline-none text-white border-2 border-white h-[40px] 
-                bg-[rgba(255,255,255,0.2)] placeholder-white"
+                class="rounded-full focus:outline-none text-white border-2 border-white h-[40px] bg-[rgba(255,255,255,0.2)] placeholder-white"
               />
-              <button onclick="document.getElementById('searchInput').value=''; searchData('')"
+              <button
+                onclick="document.getElementById('searchInput').value=''; searchData('')"
                 style="
-                margin-top: 5px;
-                margin-bottom : -5px;
-                  padding-top: 5px;
+                  margin-top: 15px;
+                  margin-bottom: -15px;
+                  padding-bottom: 15px;
                   margin-left: 10px;
-                  width:  35px;
-                  height: 35px;
-                  background-color: #ffffff;
+                  width: 27px;
+                  height: 27px;
+                  background-color: transparent;
+                  border: 2px solid #370b22;
                 "
-                class="rounded-full bg-white hover:bg-gray-200 transition"
+                class="rounded-full bg-white hover:bg-gray-200 transition relative top-1-1 right-[50px]"
               >
-                <i class="fa fa-circle-xmark text-2xl text-[#370B22]"></i>
+                <i class="fa fa-circle-xmark text-1xl text-[#370B22]"></i>
               </button>
+              <a href="#makanan">
+                <button
+                  style="
+                    margin-top: 15px;
+                    margin-bottom: -15px;
+
+                    margin-left: 15px;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #ffffff;
+                  "
+                  class="rounded-full bg-white hover:bg-gray-200 transition relative right-[50px]"
+                >
+                  <i class="fa fa-search text-1xl text-[#370B22]"></i>
+                </button>
+              </a>
             </div>
           </div>
+
           <div
             style="margin-top: 50px"
             class="pilihan flex flex-row justify-center gap-15 w-[1000px]"
           >
-            <div
+            <div data-aos="fade-left" data-aos-duration="1000"
               class="h-[225px] w-[300px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
             >
               <a href="#makanan">
@@ -139,22 +155,53 @@
                   alt="Makanan"
                 />
               </a>
-              <select style="padding: 5px 10px;"
+              <select
+                style="padding: 5px 10px"
                 class="text-white z-20 text-xl w-[87%] relative top-[190px] left-[15px] font-bold bg-gradient-to-r from-[#A05D7F]/30 to-[#D5A351]/30 backdrop-blur-md border-2 border-white/30 rounded-xl px-4 py-2 cursor-pointer outline-none transition-all duration-300 hover:from-[#A05D7F]/50 hover:to-[#D5A351]/50 hover:border-white/50 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#A05D7F]/40 focus:border-[#D5A351] focus:ring-4 focus:ring-[#D5A351]/30 appearance-none bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-[right_10px_center] pr-9 shadow-[1px_1px_2px_rgba(0,0,0,0.5)]"
                 name="MAKANAN"
                 id="selectMakanan"
                 onchange="if(this.value) window.location.href=this.value"
               >
-                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">MAKANAN</option>
-                <option value="#UMKM_1" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Mie Ayam Keraton</option>
-                <option value="#UMKM_2" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Nasi Kuning JJM</option>
-                <option value="#UMKM_3" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Seblak Mewek</option>
-                <option value="#UMKM_4" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Dapoer Kita</option>
-                <option value="#UMKM_5" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Mi Aceh Lamlo</option>
+                <option
+                  value=""
+                  class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer"
+                >
+                  MAKANAN
+                </option>
+                <option
+                  value="#UMKM_1"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Mie Ayam Keraton
+                </option>
+                <option
+                  value="#UMKM_2"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Nasi Kuning JJM
+                </option>
+                <option
+                  value="#UMKM_3"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Seblak Mewek
+                </option>
+                <option
+                  value="#UMKM_4"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Dapoer Kita
+                </option>
+                <option
+                  value="#UMKM_5"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Mi Aceh Lamlo
+                </option>
               </select>
             </div>
 
-            <div
+            <div data-aos="fade-down" data-aos-duration="700"
               class="h-[225px] w-[300px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
             >
               <a href="#kategoriMinuman">
@@ -170,14 +217,34 @@
                 id="selectMinuman"
                 onchange="if(this.value) window.location.href=this.value"
               >
-                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">MINUMAN</option>
-                <option value="#UMKM_6" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Coffe Calf</option>
-                <option value="#UMKM_7" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Pocket Coffe</option>
-                <option value="#UMKM_8" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">kopi .dll</option>
+                <option
+                  value=""
+                  class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer"
+                >
+                  MINUMAN
+                </option>
+                <option
+                  value="#UMKM_6"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Coffe Calf
+                </option>
+                <option
+                  value="#UMKM_7"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Pocket Coffe
+                </option>
+                <option
+                  value="#UMKM_8"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  kopi .dll
+                </option>
               </select>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="1000"
               class="h-[225px] w-[300px] shrink-0 rounded-2xl flex flex-col-reverse items-start overflow-hidden"
             >
               <a href="#kategoriJasa">
@@ -193,9 +260,24 @@
                 id="selectJasa"
                 onchange="if(this.value) window.location.href=this.value"
               >
-                <option value="" class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer">JASA</option>
-                <option value="#UMKM_9" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Anyar Barbershop</option>
-                <option value="#UMKM_10" class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]">Cotton Loundry</option>
+                <option
+                  value=""
+                  class="bg-[#370B22] text-[#D5A351] font-bold text-base rounded-lg cursor-pointer"
+                >
+                  JASA
+                </option>
+                <option
+                  value="#UMKM_9"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Anyar Barbershop
+                </option>
+                <option
+                  value="#UMKM_10"
+                  class="bg-[#370B22] text-white font-semibold text-base rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-[#A05D7F] hover:to-[#D5A351]"
+                >
+                  Cotton Loundry
+                </option>
               </select>
             </div>
           </div>
@@ -210,7 +292,7 @@
       class="kategoriMakanan flex flex-col gap-10 items-center"
     >
       <div
-      id="kategoriMakanan"
+        id="kategoriMakanan"
         class="flex h-[70px] w-[520px] tracking-[3px] items-center justify-center rounded-[20px] bg-gradient-to-r from-[#A05D7F] to-[#D5A351] text-2xl font-semibold text-white shadow-lg"
       >
         <h1>KATEGORI MAKANAN</h1>
@@ -219,10 +301,9 @@
       <!-- UMKM 1 -->
       <main style="margin-bottom: 50px" id="UMKM_1">
         <!-- Judul UMKM -->
-        <div
+        <div data-aos="fade-down" data-aos-duration="1000"
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Mie Ayam Keraton</h1>
         </div>
@@ -232,7 +313,7 @@
           class="isiUMKM flex flex-row justify-center items-center gap-50 mb-20"
         >
           <!-- bagian kiri -->
-          <div class="kiriIsiUMKM flex flex-col gap-10">
+          <div class="kiriIsiUMKM flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- gambar UMKM -->
             <div class="gambarUMKM">
               <img
@@ -272,7 +353,8 @@
 
           <!-- bagian kanan -->
 
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10"
+          data-aos="fade-right" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -322,8 +404,7 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 210px"
-          class="flex justify-center items-center rounded-[30px] w-[400px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-xl font-bold mb-4 relative
-          after:content-[''] after:absolute after:w-[4px] after:h-[455px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[130px]"
+          class="flex justify-center items-center rounded-[30px] w-[400px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[455px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[130px]"
         >
           <h1>Nasi Kuning dan Nasi Uduk JJM</h1>
         </div>
@@ -373,7 +454,7 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -420,10 +501,9 @@
       <!-- UMKM 1 -->
       <main style="margin-bottom: 50px" id="UMKM_3">
         <!-- Judul UMKM -->
-        <div
+        <div data-aos="fade-down" data-aos-duration="1000"
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[443px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[443px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Seblak Mewek</h1>
         </div>
@@ -433,7 +513,7 @@
           class="isiUMKM flex flex-row justify-center items-center gap-50 mb-20"
         >
           <!-- bagian kiri -->
-          <div class="kiriIsiUMKM flex flex-col gap-10">
+          <div class="kiriIsiUMKM flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- gambar UMKM -->
             <div class="gambarUMKM">
               <img
@@ -473,7 +553,7 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-right" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -523,8 +603,7 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 210px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative
-          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Dapoer Kita</h1>
         </div>
@@ -574,12 +653,11 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
-              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative
-              before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
+              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
             >
               <p class="text-justify">
                 Mie Ayam Keraton hadir dengan konsep "harga kaki lima, rasa
@@ -592,8 +670,7 @@
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
-              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative
-              before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
+              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
             >
               <p class="text-justify">Varian Harga dan Menu</p>
               <ul>
@@ -608,8 +685,7 @@
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
-              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative
-              before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
+              class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative before:content-[''] before:absolute before:w-[60px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-60px]"
             >
               <p class="text-justify">
                 Lokasi : Blk. A Jl. Tenggiri No.3, RT.17/RW.6, Jati, Kec. Pulo
@@ -678,7 +754,7 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-right" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -737,8 +813,7 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 230px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Coffee Calf</h1>
         </div>
@@ -834,10 +909,9 @@
       <!-- UMKM 1 -->
       <main style="margin-bottom: 50px" id="UMKM_7">
         <!-- Judul UMKM -->
-        <div
+        <div data-aos="fade-down" data-aos-duration="1000"
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Pocket Coffee</h1>
         </div>
@@ -847,7 +921,7 @@
           class="isiUMKM flex flex-row justify-center items-center gap-50 mb-20"
         >
           <!-- bagian kiri -->
-          <div class="kiriIsiUMKM flex flex-col gap-10">
+          <div class="kiriIsiUMKM flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- gambar UMKM -->
             <div class="gambarUMKM">
               <img
@@ -886,7 +960,7 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-right" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -935,8 +1009,7 @@
         <!-- Judul UMKM -->
         <div
           style="padding: 5px 20px; margin-left: 230px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Kopi .dll</h1>
         </div>
@@ -969,7 +1042,7 @@
               >
                 <iframe
                   class="rounded-2xl"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.455813951953!2d106.90154217355405!3d-6.203444960765803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4aff3ffffff%3A0x125ce53e95990595!2sKopi.dll!5e0!3m2!1sid!2sid!4v1762067650184!5m2!1sid!2sid"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.505971130425!2d106.88543277355393!3d-6.1967757607049725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f53c9497bea7%3A0x4e8daf59f6be69c5!2sCotton%20laundry!5e0!3m2!1sid!2sid!4v1762068083781!5m2!1sid!2sid"
                   width="400"
                   height="275"
                   style="border: 0"
@@ -985,14 +1058,14 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
               class="deskripsiUMKM bg-linear-to-b from-[#370B22] to-[#D2AC6C] text-white p-4 rounded-lg shadow-md relative before:content-[''] before:absolute before:w-[80px] before:h-[4px] before:bg-[#370B22] before:rounded-l-full before:top-[50%] before:right-[-80px]"
             >
               <p class="text-justify">
-                Tersedia berbagai pilihan minuman mulai dari kopi dengan aroma
+                Mie Ayam Keraton hadir dengan konsep "harga kaki lima, rasa
                 khas hingga minuman segar yang cocok dinikmati kapan saja.
                 Setiap sajian dibuat untuk menemani harimu dengan rasa yang
                 nikmat dan menyegarkan.
@@ -1042,10 +1115,9 @@
       <!-- UMKM 1 -->
       <main style="margin-bottom: 50px" id="UMKM_9">
         <!-- Judul UMKM -->
-        <div
+        <div data-aos="fade-down" data-aos-duration="1000"
           style="padding: 5px 20px; margin-left: 450px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[453px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:left-[50px]"
         >
           <h1>Anyar Barbershop</h1>
         </div>
@@ -1055,7 +1127,7 @@
           class="isiUMKM flex flex-row justify-center items-center gap-50 mb-20"
         >
           <!-- bagian kiri -->
-          <div class="kiriIsiUMKM flex flex-col gap-10">
+          <div class="kiriIsiUMKM flex flex-col gap-10" data-aos="fade-left" data-aos-duration="700">
             <!-- gambar UMKM -->
             <div class="gambarUMKM">
               <img
@@ -1094,7 +1166,7 @@
           <!-- bagian kiri end -->
 
           <!-- bagian kanan -->
-          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10">
+          <div class="kananIsiUMKM w-[400px] flex flex-col gap-10" data-aos="fade-right" data-aos-duration="700">
             <!-- Deskripsi UMKM -->
             <div
               style="padding: 10px"
@@ -1143,10 +1215,9 @@
       <!-- UMKM 2 -->
       <main style="margin-bottom: 50px" id="UMKM_10">
         <!-- Judul UMKM -->
-        <div
+        <div data-aos="fade-down" data-aos-duration="1000"
           style="padding: 5px 20px; margin-left: 230px"
-          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative 
-          after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
+          class="flex justify-center items-center rounded-[30px] w-[300px] text-center h-[75px] titleUMKM text-white bg-[#370B22] text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-[4px] after:h-[468px] after:bg-[#370B22] after:rounded-b-full after:top-[75px] after:right-[50px]"
         >
           <h1>Cotton Laundry</h1>
         </div>
@@ -1156,7 +1227,7 @@
           class="isiUMKM flex flex-row-reverse justify-center items-center gap-50 mb-20"
         >
           <!-- bagian kiri -->
-          <div class="kiriIsiUMKM flex flex-col gap-10">
+          <div class="kiriIsiUMKM flex flex-col gap-10" data-aos="fade-right" data-aos-duration="700">
             <!-- gambar UMKM -->
             <div class="gambarUMKM">
               <img
@@ -1333,6 +1404,15 @@
       <p>Copyright &copy; 2025 Mi Ayam Brigade</p>
     </div>
     <!-- Footer End -->
-     <script src="script.js"></script>
+
+    <!-- AOS -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JS -->
+    <script src="script.js"></script>
   </body>
 </html>
