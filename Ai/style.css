@@ -5,8 +5,9 @@
   font-family: 'Poppins',sans-serif;
   }
 
+
 .ChatBot{
-  margin-bottom:20px ;
+  margin-bottom: 20px ;
   /* margin-top: 20px; */
   display:flex;
   justify-content: center;
@@ -24,7 +25,7 @@
 
 .content-chat{
   width: 700px;
-  height: 500px;
+  height: 450px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -119,7 +120,7 @@ background-color: #610b37;
 }
 
 .bot-message {
-  font-size: 15px; /* lebih kecil */
+  font-size: 15px;
   padding: 6px 10px;
   max-width: 75%;
   background-color: #ffff;
@@ -146,7 +147,7 @@ background-color: #610b37;
 .cursor {
   display: inline-block;
   width: 3px;
-  background-color: #000; /* ubah ke hitam kalau bubble kamu putih */
+  background-color: #000;
   margin-left: 2px;
   animation: smoothBlink 1s ease-in-out infinite;
 }
@@ -159,5 +160,3 @@ background-color: #610b37;
     opacity: 0.1;
   }
 }
-
-

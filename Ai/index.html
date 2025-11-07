@@ -12,6 +12,7 @@
     />
     <link rel="shortcut icon" href="https://athrysd.github.io/asetMia/UMKMOVELOGO.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -19,8 +20,9 @@
   <body
     class="bg-fixed bg-linear-to-b from-[#370B22] to-[#D2AC6C] flex flex-col justify-center overflow-y-hidden"
   >
-    <div class="flex flex-row flex gap-49">
-      <div data-aos="zoom-in" data-aos-duration="1000">
+  <header>
+    <div class="absolute flex-row flex gap-80 z-999">
+      <div class="btnBack" data-aos="zoom-in" data-aos-duration="1000">
         <a
           href="../index.html"
           style="margin-left: 30px; margin-top: 20px"
@@ -37,18 +39,22 @@
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        <h1>
-          Selamat datang di page Ai kami yang bernama
-          <span
+        <div class="text">
+            <h1 class="text-center">
+            Selamat datang di <span
             class="font-bold bg-gradient-to-r from-[#A05D7F] to-[#D5A351] bg-clip-text text-transparent"
           >
             MOVE.AI
+          </span> <span class="font-normal">
+             <br> asisten pintar kami siap membantu!
           </span>
         </h1>
+        </div>
       </div>
     </div>
+  </header>
 
-    <section class="ChatBot">
+    <section style="margin-top: 90px;" class="ChatBot">
       <div class="content-chat" data-aos="zoom-in" data-aos-duration="1000">
         <header>
           <h1 class="text-3xl font-bold">
@@ -70,7 +76,7 @@
             id="user-input"
             placeholder="Type your message..."
           />
-          <button id="send-btn">Send</button>
+          <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
       </div>
     </section>
