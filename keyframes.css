@@ -115,12 +115,6 @@
 }
 
 
-.LayananContentChat:hover{
-  transform: translateY(10px);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
 @keyframes fadeLeft {
  0%{ transform: scale(0.5);}   
 100%{
@@ -128,3 +122,26 @@
 }
 }
 
+
+
+/* Hover effect for Taukah Kamu cards - only after AOS animation completes */
+#Taukah .kotak.aos-animate{ 
+  transition: transform 0.3s ease-in-out;
+}
+
+#Taukah .kotak.aos-animate:hover{
+  transform: scale(1.05);
+}
+
+
+/* Hover effect for Layanan cards - only after AOS animation completes */
+#Layanan .LayananContentChat.aos-animate,
+#Layanan .LayananContentDir.aos-animate{
+  transition: transform 0.3s ease-in-out;
+}
+
+#Layanan .LayananContentChat.aos-animate:hover, 
+#Layanan .LayananContentDir.aos-animate:hover{
+  transform: translateY(-12px);
+  cursor: pointer;
+}
