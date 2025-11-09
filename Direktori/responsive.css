@@ -544,10 +544,25 @@
     max-width: 100%;
     overflow-x: hidden;
   }
-
-  .isiUMKM .gambarUMKM img {
-    max-width: 320px;
+  .isiUMKM .gambarUMKM {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
+  .isiUMKM .gambarUMKM .container {
+    max-width: 160px;
+    height: auto;
+    padding: 6px;
+  }
+  .isiUMKM .gambarUMKM img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
 
   .isiUMKM .lokasi h1 {
     font-size: 1.3rem;
