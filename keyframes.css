@@ -127,6 +127,7 @@
 /* Hover effect for Taukah Kamu cards - only after AOS animation completes */
 #Taukah .kotak.aos-animate{ 
   transition: transform 0.3s ease-in-out;
+  cursor: default;
 }
 
 #Taukah .kotak.aos-animate:hover{
