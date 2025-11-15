@@ -50,7 +50,7 @@ Sebagai contoh nyata penerapan teknologi digital dan kolaborasi tim dalam menduk
 ## 👥 Anggota Tim UMKMOVE
 | Nama | Peran | Tugas |
 |------------|--------|--------|
-| **Alif Atallah Rasyad** | Project Owner / Front End Developer | Membuat tampilan website dengan Tailwind CSS dan membantu implementasi fitur interaktif |
+| **Alif Athaullah Rasyad** | Project Owner / Front End Developer | Membuat tampilan website dengan Tailwind CSS dan membantu implementasi fitur interaktif |
 | **Lutfi Idham Puro** | AI & Front-End Developer | Membuat fitur AI berbasis JavaScript dan JSON, serta membantu pengembangan bagian Front-End |
 | **Khuzaefah Hauna** | Designer & UI/UX Support | Mendesain tampilan website dan struktur halaman utama & Membantu pembuatan layout dan tampilan user-friendly |
 
