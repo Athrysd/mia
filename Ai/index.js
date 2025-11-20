@@ -1,4 +1,4 @@
-import { API_KEY } from "./config.js";
+import { API_KEY } from "./config.js";  
 const chatbot = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-btn");
@@ -67,6 +67,11 @@ Dibuat oleh: Lutfi Idham Puro, Alif Athaullah Rasyad, dan Khuzaefah Hauna dari S
 Fokus: UMKM Indonesia
 Tambahkan emoji yang menarik, bukan emoji ID.
 Jawab dengan format teks biasa tanpa markdown.
+Jawab dengan tidak menggunakan tanda bintang "*".
+Gunakan data UMKM berikut untuk menjawab pertanyaan pengguna tentang UMKM yang ada didalam website UMKMove:
+${JSON.stringify(
+    await import("./umkmData.js").then((module) => module.umkmData)
+  )}
 `;
 
   try {
