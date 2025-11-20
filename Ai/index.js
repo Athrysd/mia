@@ -103,8 +103,6 @@ Jawab dengan format teks biasa tanpa markdown.
     return "Terjadi kesalahan saat menghubungi server.";
   }
 }
-
-
 sendButton.onclick = async () => {
   const userMessage = userInput.value.trim();
   if (userMessage === "") return;
