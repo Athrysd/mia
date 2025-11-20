@@ -120,6 +120,9 @@ sendButton.onclick = async () => {
   typingdiv.remove();
   addMessage(botReply, "bot-message", true);
 
+  chatHistory.push({ role: "user", content: userMessage });
+  chatHistory.push({ role: "assistant", content: botReply });
+
   localStorage.setItem("chatHistory", chatbot.innerHTML);
 };
 
