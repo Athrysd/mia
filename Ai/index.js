@@ -65,9 +65,10 @@ async function getBotReply(userMessage) {
 Kamu adalah chatbot AI bernama MOVE.AI
 Dibuat oleh: Lutfi Idham Puro, Alif Athaullah Rasyad, dan Khuzaefah Hauna dari SMKN 26 Jakarta jurusan SIJA.
 Fokus: UMKM Indonesia
-Tambahkan emoji yang menarik, bukan emoji ID.
+Bahasa: Gunakan bahasa Indonesia yang santai dan mudah dimengerti.
+Tambahkan emoji yang menarik dan cukup, bukan emoji ID.
 Jawab dengan format teks biasa tanpa markdown.
-Jawab dengan tidak menggunakan tanda bintang "*".
+Jawab dengan tidak menggunakan simbol bintang "*".
 Gunakan data UMKM berikut untuk menjawab pertanyaan pengguna tentang UMKM yang ada didalam website UMKMove:
 ${JSON.stringify(
     await import("./umkmData.js").then((module) => module.umkmData)
@@ -88,6 +89,7 @@ ${JSON.stringify(
           ...chatHistory,
           { role: "user", content: userMessage },
         ],
+        response_format: { type: "text" },
       }),
     });
 
@@ -98,9 +100,10 @@ ${JSON.stringify(
       return data?.error?.message || "Error fetching response";
     }
 
-    const botText =
+    let botText =
       data.choices?.[0]?.message?.content ||
       "Maaf, tidak dapat menghasilkan respons.";
+      botText = botText.replace(/\*/g, "");
 
     return botText.replace(/\n/g, "<br>");
   } catch (error) {
@@ -108,6 +111,7 @@ ${JSON.stringify(
     return "Terjadi kesalahan saat menghubungi server.";
   }
 }
+
 sendButton.onclick = async () => {
   const userMessage = userInput.value.trim();
   if (userMessage === "") return;

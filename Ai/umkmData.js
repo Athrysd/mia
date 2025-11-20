@@ -13,13 +13,14 @@ export const umkmData = [
     location:
       "Lokasi : Jl. Dermaga Raya No.99A, RT.5, Klender, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13470\nBuka : 18.00 - 22.00",
     description:
-      "Nikmati seblak pedas dengan cita rasa khas yang bikin melek dan mewek! Isian lengkap mulai dari kerupuk kenyal, mie, bakso, hingga ceker, dimasak dengan bumbu pedas gurih yang menggugah selera.\n Varian Harga dan Menu\n berbagai paket seblak mulai dari Rp6.000,\n dan Banyak pilihan toping mulai dari Rp2.000",
+      "Hadir dengan pilihan nasi kuning dan nasi uduk yang dimasak dengan cita rasa khas Nusantara. Disajikan hangat lengkap dengan lauk lezat dari food truck — praktis, higienis, dan selalu menggugah selera.\n Varian Harga dan Menu\n Varian Harga dan Menu Nasi Kuning : Mulai dari Rp11.000 Nasi Uduk: Mulai dari Rp10.000 (Harga disesuaikan dengan jumlah toping)",
   },
   {
     name: "Seblak Mewek",
     category: "Makanan",
-    location: "Yogyakarta",
-    description: "Brand teh jumbo dengan rasa manis pas dan kemasan besar.",
+    location: "Lokasi : Jl. H. Ismail No.51 12, RT.7/RW.3, Jatinegara, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13930\nBuka : 10.00-22.00",
+    description:
+      "Nikmati seblak pedas dengan cita rasa khas yang bikin melek dan mewek! Isian lengkap mulai dari kerupuk kenyal, mie, bakso, hingga ceker, dimasak dengan bumbu pedas gurih yang menggugah selera.\n Varian Harga dan Menu\n berbagai paket seblak mulai dari Rp6.000,\n dan Banyak pilihan toping mulai dari Rp2.000",
   },
   {
     name: "Dapoer Kita",
