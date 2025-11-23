@@ -68,10 +68,11 @@ Bahasa: Gunakan bahasa Indonesia yang santai dan mudah dimengerti.
 Tambahkan emoji yang menarik dan cukup, bukan emoji ID.
 Jawab dengan format teks biasa tanpa markdown.
 Jawab dengan tidak menggunakan simbol bintang "*".
-Gunakan data berikut:
+Jika ada yang menanyakan umkm di dalam web Gunakan data berikut:
 ${JSON.stringify(
   await import("./umkmData.js").then((module) => module.umkmData)
 )}
+Jika ada tidak tentang umkm di dalam web, jawab dengan jawaban umum sesuai pengetahuanmu.
 `;
 
   try {
