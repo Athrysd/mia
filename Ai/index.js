@@ -1,4 +1,3 @@
-import { API_KEY } from "./config.js";  
 const chatbot = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-btn");
@@ -59,7 +58,7 @@ function showtyping() {
 
 //
 async function getBotReply(userMessage) {
-  const url = "https://api.groq.com/openai/v1/chat/completions";
+  const url = "https://winter-mud-d0fa.lutfiidhampuro.workers.dev";
 
   const systemPrompt = `
 Kamu adalah chatbot AI bernama MOVE.AI
@@ -69,10 +68,10 @@ Bahasa: Gunakan bahasa Indonesia yang santai dan mudah dimengerti.
 Tambahkan emoji yang menarik dan cukup, bukan emoji ID.
 Jawab dengan format teks biasa tanpa markdown.
 Jawab dengan tidak menggunakan simbol bintang "*".
-Gunakan data UMKM berikut untuk menjawab pertanyaan pengguna tentang UMKM yang ada didalam website UMKMove:
+Gunakan data berikut:
 ${JSON.stringify(
-    await import("./umkmData.js").then((module) => module.umkmData)
-  )}
+  await import("./umkmData.js").then((module) => module.umkmData)
+)}
 `;
 
   try {
@@ -80,30 +79,23 @@ ${JSON.stringify(
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
       },
       body: JSON.stringify({
-        model: "openai/gpt-oss-20b",
         messages: [
           { role: "system", content: systemPrompt },
           ...chatHistory,
           { role: "user", content: userMessage },
         ],
-        response_format: { type: "text" },
       }),
     });
 
     const data = await response.json();
 
-    if (!response.ok) {
-      console.error("API Error:", data);
-      return data?.error?.message || "Error fetching response";
-    }
-
     let botText =
       data.choices?.[0]?.message?.content ||
       "Maaf, tidak dapat menghasilkan respons.";
-      botText = botText.replace(/\*/g, "");
+
+    botText = botText.replace(/\*/g, "");
 
     return botText.replace(/\n/g, "<br>");
   } catch (error) {
@@ -111,6 +103,7 @@ ${JSON.stringify(
     return "Terjadi kesalahan saat menghubungi server.";
   }
 }
+
 
 sendButton.onclick = async () => {
   const userMessage = userInput.value.trim();
